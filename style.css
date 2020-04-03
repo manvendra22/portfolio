@@ -136,12 +136,13 @@ a {
     background: #EEEAF9;
     color: #9980FA;
     padding: 20px;
+    height: 15%;
 }
 
 .card-container {
     display: flex;
     flex-wrap: nowrap;
-    height: 80%;
+    height: 85%;
     overflow-x: scroll;
     scrollbar-width: 1px;
 }
@@ -182,4 +183,18 @@ a {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        flex-direction: column;
+    }
+
+    .hero-container {
+        width: 100%;
+    }
+
+    .content-container {
+        width: 100%;
+    }
 }

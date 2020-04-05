@@ -6,13 +6,9 @@
     box-sizing: inherit;
 }
 
-html {
-    height: 100%;
-}
-
 body {
     box-sizing: border-box;
-    height: 100%;
+    height: 100vh;
     font-size: 18px;
     font-family: 'Roboto Mono', monospace;
     display: flex;
@@ -24,7 +20,6 @@ a {
 }
 
 .hero-container {
-    height: 100%;
     width: 40%;
     padding: 20px;
     display: flex;
@@ -34,8 +29,8 @@ a {
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
+    padding: 20px;
+    color: #E66731;
     text-align: center;
 }
 
@@ -48,7 +43,6 @@ a {
 }
 
 .main-text {
-    color: #E66731;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -59,15 +53,12 @@ a {
 }
 
 .sub-text {
-    color: #E66731;
     font-size: 20px;
-    margin-bottom: 20px;
 }
 
-.link-container {
+.links {
     display: flex;
     justify-content: center;
-    width: 100%;
     margin-bottom: 20px;
 }
 
@@ -77,6 +68,9 @@ a {
     color: #4a6f75;
     font-size: 16px;
     padding: 10px;
+}
+
+.first-link {
     margin-right: 10px;
 }
 
@@ -91,9 +85,7 @@ a {
     background: #EDEEF7;
     padding: 20px;
     line-height: 1.5;
-    min-height: 40%;
-    min-width: 80%;
-    overflow: scroll;
+    width: 80%;
     border: 2px solid lightgray;
 }
 
@@ -137,12 +129,14 @@ a {
     color: #9980FA;
     padding: 20px;
     height: 15%;
+    display: flex;
+    align-items: center;
 }
 
 .card-container {
     display: flex;
-    flex-wrap: nowrap;
     height: 85%;
+    padding: 20px;
     overflow-x: scroll;
     scrollbar-width: 1px;
 }
@@ -155,9 +149,8 @@ a {
     border-radius: 10px;
     background: rgb(255, 255, 255);
     padding: 10px;
-    margin: 20px;
+    margin-right: 20px;
     transition: box-shadow 0.2s ease 0s;
-    width: 50%;
 }
 
 .card:hover {
@@ -178,7 +171,6 @@ a {
 
 .project_image {
     vertical-align: middle;
-    width: 100%;
     height: 100%;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -192,6 +184,10 @@ a {
 
     .hero-container {
         width: 100%;
+    }
+
+    .skills {
+        width: 60%;
     }
 
     .content-container {

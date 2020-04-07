@@ -156,7 +156,7 @@ a {
     border: 1px solid rgb(247, 247, 247);
     border-radius: 10px;
     background: rgb(255, 255, 255);
-    width: 55%;
+    width: 60%;
     padding: 10px;
     margin-right: 20px;
     transition: box-shadow 0.2s ease 0s;
@@ -211,5 +211,20 @@ a {
 
     .content-container {
         width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .skills {
+        width: 80%;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card .title {
+        font-size: 14px;
     }
 }

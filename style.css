@@ -33,6 +33,11 @@ a {
     text-align: end;
 }
 
+.header .icon {
+    height: 30px;
+    margin-right: 0px;
+}
+
 .header .icon:hover {
     transform: scale(1.2);
 }

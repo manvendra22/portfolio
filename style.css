@@ -44,9 +44,9 @@ a {
 }
 
 .intro {
-    padding: 20px;
     color: #E66731;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .avatar {

@@ -59,7 +59,7 @@ a {
 
 .main-text {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .main-text-bg {
@@ -72,9 +72,8 @@ a {
 
 .links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 20px;
-    width: 80%;
 }
 
 .link {
@@ -88,7 +87,7 @@ a {
 }
 
 .first-link {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .link:hover {
@@ -98,6 +97,7 @@ a {
 
 .code-wrapper {
     width: 80%;
+    max-width: 500px;
 }
 
 .code-header {
@@ -189,7 +189,6 @@ a {
 }
 
 .card .title {
-    /* font-size: 16px; */
     color: black;
     height: 10%;
     display: flex;

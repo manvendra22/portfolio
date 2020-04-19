@@ -44,7 +44,7 @@ a {
 }
 
 .intro {
-    color: #E66731;
+    color: #303F91;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -58,13 +58,12 @@ a {
 }
 
 .main-text {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .main-text-bg {
-    background: #F5DCD2;
-    padding: 0 5px 0 5px;
+    font-size: 24px;
 }
 
 .sub-text {
@@ -73,14 +72,16 @@ a {
 
 .links {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 20px;
+    width: 80%;
 }
 
 .link {
     display: flex;
-    background-color: #e3f0f3;
-    color: #4a6f75;
+    align-items: center;
+    background-color: #E3F4F4;
+    color: #499D97;
     font-size: 14px;
     padding: 10px;
     transition: all 0.2s ease 0s;
@@ -95,13 +96,23 @@ a {
     transform: translateY(-4px);
 }
 
-.skills {
+.code-wrapper {
+    width: 80%;
+}
+
+.code-header {
+    background: #f2f2f7;
+    color: #8b8ba7;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.code-content {
     display: flex;
     justify-content: center;
-    background: #EBEEF5;
-    padding: 20px;
+    background: #334150;
     line-height: 1.5;
-    width: 80%;
+    padding: 20px;
 }
 
 .skill {
@@ -115,19 +126,23 @@ a {
 }
 
 .code-1 {
-    color: #DC3E58;
+    color: #ffc312;
 }
 
 .code-2 {
-    color: #F8C233;
+    color: #ff8d58;
 }
 
 .code-3 {
-    color: #459069
+    color: #65ddd9;
 }
 
 .code-4 {
-    color: #ae81ff
+    color: #DC3E58;
+}
+
+.code-5 {
+    color: #75f7a6;
 }
 
 .content-container {
@@ -151,7 +166,7 @@ a {
 .card-container {
     display: flex;
     height: 85%;
-    padding: 20px;
+    padding: 30px;
     overflow-x: scroll;
 }
 
@@ -163,9 +178,9 @@ a {
     border: 1px solid rgb(247, 247, 247);
     border-radius: 10px;
     background: rgb(255, 255, 255);
-    width: 60%;
+    width: 55%;
     padding: 10px;
-    margin-right: 20px;
+    margin-right: 30px;
     transition: box-shadow 0.2s ease 0s;
 }
 
@@ -174,7 +189,7 @@ a {
 }
 
 .card .title {
-    font-size: 16px;
+    /* font-size: 16px; */
     color: black;
     height: 10%;
     display: flex;

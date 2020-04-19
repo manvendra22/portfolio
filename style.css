@@ -20,7 +20,7 @@ a {
 }
 
 .icon {
-    height: 25px;
+    height: 20px;
     margin-right: 10px;
     transition: all 0.2s ease 0s;
 }
@@ -40,7 +40,7 @@ a {
 }
 
 .header .icon {
-    height: 30px;
+    height: 25px;
     margin-right: 0px;
 }
 

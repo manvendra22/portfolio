@@ -19,6 +19,12 @@ a {
     color: inherit;
 }
 
+.icon {
+    height: 25px;
+    margin-right: 10px;
+    transition: all 0.2s ease 0s;
+}
+
 .hero-container {
     width: 40%;
     padding: 20px;
@@ -36,7 +42,6 @@ a {
 .header .icon {
     height: 30px;
     margin-right: 0px;
-    transition: all 0.2s ease 0s;
 }
 
 .header .icon:hover {
@@ -95,6 +100,10 @@ a {
     transform: translateY(-4px);
 }
 
+.link:hover .icon {
+    transform: scale(1.2);
+}
+
 .code-wrapper {
     width: 80%;
     max-width: 500px;
@@ -118,11 +127,6 @@ a {
 .skill {
     display: flex;
     margin-left: 20px;
-}
-
-.icon {
-    height: 25px;
-    margin-right: 10px;
 }
 
 .code-1 {

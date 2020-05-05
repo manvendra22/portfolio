@@ -40,12 +40,13 @@ a {
 }
 
 .header .icon {
-    height: 25px;
+    height: 50px;
     margin-right: 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .header .icon:hover {
-    transform: scale(1.2);
+    transform: rotate(360deg) scale(1.3);
 }
 
 .intro {
@@ -88,7 +89,7 @@ a {
     color: #499D97;
     font-size: 14px;
     padding: 10px;
-    transition: all 0.2s ease 0s;
+    transition: all 0.3s ease;
 }
 
 .first-link {

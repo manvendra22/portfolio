@@ -232,10 +232,6 @@ a {
 }
 
 @media only screen and (max-width: 1024px) {
-    html {
-        font-size: 14px;
-    }
-
     body {
         flex-direction: column;
     }
@@ -252,7 +248,7 @@ a {
 
 @media only screen and (max-width: 576px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .card-container {

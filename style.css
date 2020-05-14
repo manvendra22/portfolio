@@ -61,6 +61,7 @@ a {
 .intro {
     color: #303F91;
     text-align: center;
+    line-height: 1.5;
     margin-bottom: 30px;
 }
 
@@ -87,7 +88,6 @@ a {
 }
 
 .sub-text span {
-    /* color: #303F91; */
     background: #d6d9e9;
 }
 

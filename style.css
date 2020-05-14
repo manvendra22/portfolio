@@ -73,17 +73,22 @@ a {
 }
 
 .main-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
-.main-text-bg {
-    font-size: 1.4rem;
+.main-text span {
+    font-size: 1.3rem;
 }
 
 .sub-text {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #45529C;
+}
+
+.sub-text span {
+    /* color: #303F91; */
+    background: #d6d9e9;
 }
 
 .links {
@@ -97,7 +102,7 @@ a {
     align-items: center;
     background-color: #E3F4F4;
     color: #499D97;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 10px;
     transition: all 0.3s ease;
 }
@@ -136,6 +141,7 @@ a {
     justify-content: center;
     background: #334150;
     line-height: 1.5;
+    font-size: 0.9rem;
     padding: 20px;
 }
 
@@ -207,11 +213,11 @@ a {
 
 .card:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
-    transform: scale(1.02);
+    transform: scale(1.01);
 }
 
 .card .title {
-    color: black;
+    font-size: 0.85rem;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
@@ -259,7 +265,7 @@ a {
 }
 
 .icons8 a {
-    color: #75f7a6;
+    color: #ff8d58;
 }
 
 

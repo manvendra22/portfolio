@@ -208,16 +208,16 @@ a {
     border-radius: 10px;
     background: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+    transform: scale(0.95);
     transition: all 0.3s ease 0s;
 }
 
 .card:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
-    transform: scale(1.01);
+    transform: scale(1);
 }
 
 .card .title {
-    font-size: 0.85rem;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;

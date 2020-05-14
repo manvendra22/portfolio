@@ -12,7 +12,6 @@ html {
 
 body {
     box-sizing: border-box;
-    height: 100vh;
     font-family: 'Roboto Mono', monospace;
     display: flex;
 }
@@ -160,6 +159,7 @@ a {
 .content-container {
     background: #F8F9FA;
     width: 60%;
+    height: 100vh;
 }
 
 .content {
@@ -230,6 +230,7 @@ a {
     width: 100%;
 }
 
+
 @media only screen and (max-width: 1024px) {
     html {
         font-size: 14px;
@@ -245,20 +246,38 @@ a {
 
     .content-container {
         width: 100%;
+        height: unset;
     }
 
-}
+    .content {
+        height: unset;
+    }
 
-@media only screen and (max-width: 576px) {
+    .title-container {
+        height: unset;
+    }
+
     .card-container {
         padding: 20px;
+        height: unset;
     }
 
     .card {
-        width: 80%;
+        margin-right: 20px;
     }
+}
 
+@media only screen and (max-width: 576px) {
     .card .title {
         font-size: 0.9rem;
+    }
+
+    .card {
+        width: unset;
+    }
+
+    .content_image {
+        width: 250px;
+        height: 150px;
     }
 }

@@ -118,14 +118,21 @@ a {
 
 .link:hover {
     cursor: pointer;
-    transform: translateY(-4px);
+    transform: translateY(-6px);
 }
 
 .link:hover .icon {
     transform: scale(1.2);
 }
 
-.code-wrapper {}
+.code-wrapper {
+    border-top: 2px solid white;
+    transition: all 0.5s ease;
+}
+
+.code-wrapper:hover {
+    border-top: 2px solid #ffc312;
+}
 
 .code-header {
     background: #f2f2f7;

@@ -30,13 +30,15 @@ a {
 .hero-container {
     position: relative;
     width: 40%;
-    padding: 20px 0;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero {}
+.hero {
+    width: 80%;
+}
 
 .header {
     position: absolute;
@@ -291,7 +293,7 @@ a {
     }
 
     .hero {
-        width: 80%;
+        width: 100%;
     }
 
     .card {

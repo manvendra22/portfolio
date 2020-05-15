@@ -205,11 +205,14 @@ a {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 260px;
     flex: 0 0 auto;
-    width: 55%;
-    min-height: 220px;
-    padding: 10px;
     margin: auto 0;
+    padding: 10px;
     border: 1px solid rgb(247, 247, 247);
     border-radius: 10px;
     background: rgb(255, 255, 255);
@@ -226,12 +229,12 @@ a {
 .card .title {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
 }
 
 .title .tech {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 5px;
 }
 
 .tech .icon {
@@ -266,6 +269,17 @@ a {
 
 .icons8 a {
     color: #ff8d58;
+}
+
+@media only screen and (min-width: 1600px) {
+    html {
+        font-size: 18px;
+    }
+
+    .card {
+        width: 600px;
+        height: 400px;
+    }
 }
 
 
@@ -307,6 +321,11 @@ a {
         padding: 20px;
     }
 
+    .card {
+        width: 400px;
+        height: 260px;
+    }
+
     .footer {
         left: 10px;
         flex-direction: column;
@@ -315,10 +334,6 @@ a {
 }
 
 @media only screen and (max-width: 640px) {
-    .card .title {
-        font-size: 0.9rem;
-    }
-
     .hero {
         width: 100%;
     }
@@ -328,8 +343,8 @@ a {
     }
 
     .card {
-        width: 80%;
-        min-height: 180px;
+        width: 300px;
+        height: 200px;
     }
 
     .footer {

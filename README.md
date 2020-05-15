@@ -1,3 +1,3 @@
-# portfolio-new
+# Portfolio
 
 ![Screenshot](portfolio_new.png)

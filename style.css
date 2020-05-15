@@ -197,17 +197,19 @@ a {
 
 .card-container {
     height: 85%;
-    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     overflow-y: hidden;
-    white-space: nowrap;
     padding: 20px;
 }
 
 .card {
+    flex: 0 0 auto;
     width: 55%;
+    min-height: 220px;
     padding: 10px;
-    margin: auto;
-    display: inline-block;
+    margin: auto 0;
     border: 1px solid rgb(247, 247, 247);
     border-radius: 10px;
     background: rgb(255, 255, 255);
@@ -327,6 +329,7 @@ a {
 
     .card {
         width: 80%;
+        min-height: 180px;
     }
 
     .footer {

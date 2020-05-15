@@ -69,6 +69,7 @@ a {
     width: 180px;
     height: 180px;
     margin: 20px auto;
+    margin-top: 0px;
 }
 
 .avatar {
@@ -255,7 +256,7 @@ a {
     bottom: 10px;
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 95%;
     color: #8b8ba7
 }
 

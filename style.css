@@ -196,16 +196,18 @@ a {
 }
 
 .card-container {
-    display: flex;
     height: 85%;
-    padding: 30px;
     overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 20px;
 }
 
 .card {
-    flex: 0 0 auto;
     width: 55%;
     padding: 10px;
+    margin: auto;
+    display: inline-block;
     border: 1px solid rgb(247, 247, 247);
     border-radius: 10px;
     background: rgb(255, 255, 255);
@@ -220,9 +222,9 @@ a {
 }
 
 .card .title {
-    height: 10%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 5px;
 }
 
 .title .tech {
@@ -237,14 +239,9 @@ a {
 
 .content_image {
     width: 100%;
-    height: 90%;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 5px;
-}
-
-.article_image {
-    height: 100%;
 }
 
 .footer {
@@ -308,10 +305,6 @@ a {
         padding: 20px;
     }
 
-    .card {
-        min-height: 320px;
-    }
-
     .footer {
         left: 10px;
         flex-direction: column;
@@ -333,7 +326,6 @@ a {
     }
 
     .card {
-        min-height: 240px;
         width: 80%;
     }
 

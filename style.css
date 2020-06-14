@@ -222,6 +222,10 @@ a {
     transition: all 0.3s ease 0s;
 }
 
+.card-padding {
+    padding: 20px 10px
+}
+
 .card:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
     transform: scale(1);
@@ -245,6 +249,7 @@ a {
 
 .content_image {
     width: 100%;
+    height: 100%;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 5px;

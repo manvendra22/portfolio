@@ -1,3 +1,3 @@
 # Portfolio
 
-![Screenshot](portfolio_new.png)
+![Screenshot](https://res.cloudinary.com/dracarys/image/upload/v1595050141/portfolio_website.png)

@@ -175,7 +175,6 @@ a {
 }
 
 /* Right side */
-
 .content-container {
     background: #F8F9FA;
     width: 60%;
@@ -194,6 +193,21 @@ a {
     height: 15%;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.right-arrow {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    transform: rotate(-90deg);
+    height: 100%;
+}
+
+.content:hover .right-arrow {
+    display: block;
 }
 
 .card-container {

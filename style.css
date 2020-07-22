@@ -220,14 +220,12 @@ a {
     font-size: 14px;
   }
 
+  .card {
+    width: 90%;
+  }
+
   .icon {
     height: 20px;
     margin-right: 5px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .card {
-    width: 90%;
   }
 }

@@ -36,13 +36,13 @@ a {
 .hero {
     width: 80%;
     max-width: 700px;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 
 .header {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 50px;
     padding: 30px;
 }
 
@@ -52,9 +52,13 @@ a {
 
 .linkedin_icon {}
 
+.header .icon:hover {
+    transform: scale(1.2);
+}
+
 .intro {
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
 }
 
 .avatar-container {
@@ -170,7 +174,7 @@ a {
     flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    padding: 50px;
+    padding: 20px 20px 50px 20px;
     margin-bottom: 40px;
 }
 

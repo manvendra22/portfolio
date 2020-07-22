@@ -117,7 +117,7 @@ a {
 .code-wrapper {
     border-top: 2px solid white;
     transition: all 0.5s ease;
-    box-shadow: 0 50px 40px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 40px 40px rgba(0, 0, 0, 0.07);
 }
 
 .code-wrapper:hover {
@@ -191,7 +191,7 @@ a {
     background: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 20px;
     transform: scale(0.9);
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease;
 }
 
 .card:hover {

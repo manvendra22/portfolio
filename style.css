@@ -168,14 +168,12 @@ a {
 .title-container {
   font-size: 1.6rem;
   color: #57af7a;
-  margin: 0 0 20px 30px;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
-  /* margin: 30px auto; */
+  margin: 30px auto;
 }
 
 .card {

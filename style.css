@@ -17,6 +17,10 @@ body {
   background: #fff;
 }
 
+.git {
+  fill: red;
+}
+
 code {
   font-family: "Roboto Mono", monospace;
 }
@@ -34,6 +38,28 @@ a {
 .icon {
   height: 1.25rem;
   margin-right: 10px;
+}
+
+.svg_icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #57af7a;
+}
+
+.resume_icon:hover {
+  fill: #1970ca;
+}
+
+.github_icon:hover {
+  fill: #171515;
+}
+
+.linkedin_icon:hover {
+  fill: #0077b5;
+}
+
+.twitter_icon:hover {
+  fill: #03a9f4;
 }
 
 .header {
@@ -122,6 +148,7 @@ a {
 }
 
 .github_icon {
+  color: red;
 }
 
 .resume_icon {
@@ -212,7 +239,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .title .tech {
@@ -223,7 +250,7 @@ a {
 .content_image {
   width: 100%;
   border: 1px solid #ddd;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .footer {

@@ -17,10 +17,6 @@ body {
   background: #fff;
 }
 
-.git {
-  fill: red;
-}
-
 code {
   font-family: "Roboto Mono", monospace;
 }
@@ -37,17 +33,17 @@ a {
 
 .icon {
   height: 1.25rem;
-  margin-right: 10px;
+  margin-right: 0.5rem;
 }
 
 .svg_icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.2rem;
+  height: 1.2rem;
   fill: #57af7a;
 }
 
 .resume_icon:hover {
-  fill: #1970ca;
+  fill: #250902;
 }
 
 .github_icon:hover {
@@ -138,7 +134,7 @@ a {
 }
 
 .link {
-  margin-right: 1.25rem;
+  margin-right: 1.5rem;
 }
 
 .twitter_icon {

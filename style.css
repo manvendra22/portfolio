@@ -58,24 +58,29 @@ a {
   fill: #03a9f4;
 }
 
-.header {
+.nav {
   position: fixed;
   display: flex;
   flex-direction: column;
-  color: #57af7a;
+  color: #89c7a2;
   background: #fff;
   top: 3rem;
   left: 3rem;
 }
 
-.header a {
-  margin-bottom: 1rem;
+.nav a {
+  margin-bottom: 2rem;
   transition: all 0.3s ease;
 }
 
-.header a:hover {
+.nav a:hover {
   cursor: pointer;
   transform: translateY(-4px);
+}
+
+.nav .visible {
+  color: #57af7a;
+  transform: scale(1.1);
 }
 
 #home {
@@ -124,7 +129,7 @@ a {
 }
 
 .sub-text span {
-  background: #cddbe4;
+  background: #d2d9df;
 }
 
 .links {
@@ -251,7 +256,7 @@ a {
     font-size: 14px;
   }
 
-  .header {
+  .nav {
     flex-direction: row;
     width: 100%;
     top: 0;
@@ -259,8 +264,12 @@ a {
     padding: 2rem;
   }
 
-  .header a {
+  .nav a {
     margin: unset;
+    margin-left: 2rem;
+  }
+
+  .nav a:first-child {
     margin-left: 1rem;
   }
 

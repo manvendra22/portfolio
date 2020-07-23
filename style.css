@@ -59,12 +59,13 @@ a {
 }
 
 .header {
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
+  position: fixed;
   display: flex;
   flex-direction: column;
   color: #57af7a;
+  background: #fff;
+  top: 3rem;
+  left: 3rem;
 }
 
 .header a {
@@ -86,12 +87,13 @@ a {
 
 #skills,
 #projects {
-  padding-top: 2rem;
+  padding-top: 3rem;
   margin-bottom: 4rem;
 }
 
 #blog {
-  margin-bottom: 4rem;
+  padding-top: 2rem;
+  margin-bottom: 8rem;
 }
 
 .intro {
@@ -137,22 +139,10 @@ a {
   margin-right: 1.5rem;
 }
 
-.twitter_icon {
-}
-
-.linkedin_icon {
-}
-
-.github_icon {
-  color: red;
-}
-
-.resume_icon {
-}
-
 .title-container {
-  font-size: 1.4rem;
-  color: #57af7a;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
 }
 
@@ -252,16 +242,39 @@ a {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 1.25rem;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
   html {
     font-size: 14px;
   }
 
+  .header {
+    flex-direction: row;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+  }
+
+  .header a {
+    margin: unset;
+    margin-left: 1rem;
+  }
+
+  #skills,
+  #projects {
+    padding-top: 5rem;
+  }
+
   .code-wrapper {
     width: unset;
+  }
+
+  .card-container {
+    justify-content: center;
   }
 
   .card {

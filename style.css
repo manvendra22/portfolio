@@ -285,7 +285,7 @@ a {
   }
 
   .nav .visible {
-    transform: scale(1.3);
+    transform: scale(1.3) !important;
   }
 
   #skills,
@@ -341,10 +341,6 @@ a {
   .linkedin_icon:hover,
   .twitter_icon:hover {
     fill: #57af7a;
-  }
-
-  .nav a:hover {
-    transform: unset;
   }
 
   .code-wrapper:hover {

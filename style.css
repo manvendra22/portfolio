@@ -140,7 +140,11 @@ a {
 }
 
 .link {
-  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.link:first-child {
+  margin: unset;
 }
 
 .code-wrapper {
@@ -236,11 +240,15 @@ a {
 }
 
 .footer {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.25rem;
 }
 
 @media only screen and (max-width: 991px) {
@@ -280,6 +288,23 @@ a {
 
   .card {
     width: 90%;
+  }
+
+  .footer {
+    padding: 0 1rem;
+    justify-content: space-around;
+  }
+
+  .footer .link {
+    margin-left: 0.8rem;
+  }
+
+  .footer .link:first-child {
+    margin-left: unset;
+  }
+
+  .footer .links {
+    margin: 0 1rem;
   }
 
   /* resetting hover values to original */

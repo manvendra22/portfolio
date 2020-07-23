@@ -32,8 +32,6 @@ a {
 
 .icon {
   height: 25px;
-  margin-right: 10px;
-  transition: all 0.2s ease;
 }
 
 .header {
@@ -42,8 +40,13 @@ a {
   height: 50px;
 }
 
+.header .icon {
+  transition: all 0.2s ease;
+}
+
 .twitter_icon {
   margin-top: 5px;
+  margin-right: 10px;
 }
 
 .linkedin_icon {
@@ -61,6 +64,10 @@ a {
 .intro {
   text-align: center;
   margin-bottom: 120px;
+}
+
+.intro .icon {
+  margin-right: 5px;
 }
 
 .avatar-container {
@@ -138,6 +145,10 @@ a {
   background: #334150;
   line-height: 1.5;
   padding: 30px;
+}
+
+.code-content .icon {
+  margin-right: 10px;
 }
 
 .skill {
@@ -226,6 +237,5 @@ a {
 
   .icon {
     height: 20px;
-    margin-right: 5px;
   }
 }

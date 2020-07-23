@@ -1,6 +1,6 @@
 # Portfolio Website
 
-![Screenshot](https://res.cloudinary.com/dracarys/image/upload/portfolio_website.png)
+![Screenshot](https://res.cloudinary.com/dracarys/image/upload/portfolio_website)
 
 ### Tech stack:
 

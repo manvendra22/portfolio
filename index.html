@@ -29,22 +29,13 @@
 
   <body>
     <div class="app">
-      <div class="header">
-        <a target="_blank" href="https://twitter.com/manvendra_22">
-          <img src="images/twitter.svg" alt="logo" class="icon twitter_icon" />
-        </a>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/manvendra-singh221/"
-        >
-          <img
-            src="images/linkedin.svg"
-            alt="logo"
-            class="icon linkedin_icon"
-          />
-        </a>
-      </div>
-      <div class="hero">
+      <nav class="header">
+        <a href="#home">home</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#blog">blog</a>
+      </nav>
+      <section id="home">
         <div class="intro">
           <div class="avatar-container">
             <img
@@ -64,10 +55,9 @@
             <a
               target="_blank"
               href="https://docs.google.com/document/d/18YuBSlORVFwnsSylg67moAqeEz_gc2MTcAFbQXrdksw/edit?usp=sharing"
-              class="link first-link"
+              class="link"
             >
               <img src="images/resume.svg" alt="logo" class="icon" />
-              Resume
             </a>
             <a
               target="_blank"
@@ -75,10 +65,34 @@
               class="link"
             >
               <img src="images/github.svg" alt="logo" class="icon" />
-              Github
+            </a>
+            <a
+              target="_blank"
+              href="https://twitter.com/manvendra_22"
+              class="link"
+            >
+              <img
+                src="images/twitter.svg"
+                alt="logo"
+                class="icon twitter_icon"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/manvendra-singh221/"
+              class="link"
+            >
+              <img
+                src="images/linkedin.svg"
+                alt="logo"
+                class="icon linkedin_icon"
+              />
             </a>
           </div>
         </div>
+      </section>
+      <section id="skills">
+        <div class="title-container">skills:</div>
         <div class="code-wrapper">
           <div class="code-header">
             ~/manvendra/skills.js
@@ -165,109 +179,125 @@
             </code>
           </div>
         </div>
-      </div>
-      <div class="title-container">Projects:</div>
-      <div class="card-container">
-        <a target="_blank" href="https://weatherchek.netlify.app/" class="card">
-          <div class="title">
-            <div>Weather Check</div>
-            <div class="tech">
-              <img src="images/skills/react.svg" alt="logo" class="icon" />
-              <img src="images/skills/css3.svg" alt="logo" class="icon" />
+      </section>
+      <section id="projects">
+        <div class="title-container">projects:</div>
+        <div class="card-container">
+          <a
+            target="_blank"
+            href="https://weatherchek.netlify.app/"
+            class="card"
+          >
+            <div class="title">
+              <div>Weather Check</div>
+              <div class="tech">
+                <img src="images/skills/react.svg" alt="logo" class="icon" />
+                <img src="images/skills/css3.svg" alt="logo" class="icon" />
+              </div>
             </div>
-          </div>
-          <img
-            loading="lazy"
-            class="content_image"
-            src="https://res.cloudinary.com/dracarys/image/upload/weather_check.png"
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://image-text-reader.herokuapp.com/"
-          class="card"
-        >
-          <div class="title">
-            <div>Image Text Reader</div>
-            <div class="tech">
-              <img src="images/skills/react.svg" alt="logo" class="icon" />
-              <img src="images/skills/sass.svg" alt="logo" class="icon" />
-              <img src="images/skills/nodejs.svg" alt="logo" class="icon" />
+            <img
+              loading="lazy"
+              class="content_image"
+              src="https://res.cloudinary.com/dracarys/image/upload/weather_check.png"
+            />
+          </a>
+          <a
+            target="_blank"
+            href="https://image-text-reader.herokuapp.com/"
+            class="card"
+          >
+            <div class="title">
+              <div>Image Text Reader</div>
+              <div class="tech">
+                <img src="images/skills/react.svg" alt="logo" class="icon" />
+                <img src="images/skills/sass.svg" alt="logo" class="icon" />
+                <img src="images/skills/nodejs.svg" alt="logo" class="icon" />
+              </div>
             </div>
-          </div>
-          <img
-            loading="lazy"
-            class="content_image"
-            src="https://res.cloudinary.com/dracarys/image/upload/image_text.png"
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://contacts-book.netlify.app/"
-          class="card"
-        >
-          <div class="title">
-            <div>Contacts Book</div>
-            <div class="tech">
-              <img src="images/skills/javascript.svg" alt="logo" class="icon" />
-              <img src="images/skills/html5.svg" alt="logo" class="icon" />
-              <img src="images/skills/css3.svg" alt="logo" class="icon" />
+            <img
+              loading="lazy"
+              class="content_image"
+              src="https://res.cloudinary.com/dracarys/image/upload/image_text.png"
+            />
+          </a>
+          <a
+            target="_blank"
+            href="https://contacts-book.netlify.app/"
+            class="card"
+          >
+            <div class="title">
+              <div>Contacts Book</div>
+              <div class="tech">
+                <img
+                  src="images/skills/javascript.svg"
+                  alt="logo"
+                  class="icon"
+                />
+                <img src="images/skills/html5.svg" alt="logo" class="icon" />
+                <img src="images/skills/css3.svg" alt="logo" class="icon" />
+              </div>
             </div>
-          </div>
-          <img
-            loading="lazy"
-            class="content_image"
-            src="https://res.cloudinary.com/dracarys/image/upload/contacts_book.png"
-          />
-        </a>
-        <a target="_blank" href="https://react-kit.netlify.app/" class="card">
-          <div class="title">
-            <div>React UI Kit</div>
-            <div class="tech">
-              <img src="images/skills/react.svg" alt="logo" class="icon" />
-              <img src="images/skills/sass.svg" alt="logo" class="icon" />
+            <img
+              loading="lazy"
+              class="content_image"
+              src="https://res.cloudinary.com/dracarys/image/upload/contacts_book.png"
+            />
+          </a>
+          <a target="_blank" href="https://react-kit.netlify.app/" class="card">
+            <div class="title">
+              <div>React UI Kit</div>
+              <div class="tech">
+                <img src="images/skills/react.svg" alt="logo" class="icon" />
+                <img src="images/skills/sass.svg" alt="logo" class="icon" />
+              </div>
             </div>
-          </div>
-          <img
-            loading="lazy"
-            class="content_image"
-            src="https://res.cloudinary.com/dracarys/image/upload/react_ui.png"
-          />
-        </a>
-        <a
-          target="_blank"
-          href="https://sms-price-calculator.netlify.app/"
-          class="card"
-        >
-          <div class="title">
-            <div>SMS Price Calculator</div>
-            <div class="tech">
-              <img src="images/skills/javascript.svg" alt="logo" class="icon" />
-              <img src="images/skills/html5.svg" alt="logo" class="icon" />
-              <img src="images/skills/css3.svg" alt="logo" class="icon" />
+            <img
+              loading="lazy"
+              class="content_image"
+              src="https://res.cloudinary.com/dracarys/image/upload/react_ui.png"
+            />
+          </a>
+          <a
+            target="_blank"
+            href="https://sms-price-calculator.netlify.app/"
+            class="card"
+          >
+            <div class="title">
+              <div>SMS Price Calculator</div>
+              <div class="tech">
+                <img
+                  src="images/skills/javascript.svg"
+                  alt="logo"
+                  class="icon"
+                />
+                <img src="images/skills/html5.svg" alt="logo" class="icon" />
+                <img src="images/skills/css3.svg" alt="logo" class="icon" />
+              </div>
             </div>
-          </div>
-          <img
-            loading="lazy"
-            class="content_image"
-            src="https://res.cloudinary.com/dracarys/image/upload/sms_price.png"
-          />
-        </a>
-      </div>
-      <div class="title-container">Articles:</div>
-      <div class="card-container">
-        <a
-          target="_blank"
-          href="https://medium.com/@manvendra22/reactjs-lessons-learned-from-the-mistakes-i-made-bf6db575d1e2"
-          class="card"
-        >
-          <img
-            loading="lazy"
-            class="content_image"
-            src="https://res.cloudinary.com/dracarys/image/upload/medium_1.png"
-          />
-        </a>
-      </div>
+            <img
+              loading="lazy"
+              class="content_image"
+              src="https://res.cloudinary.com/dracarys/image/upload/sms_price.png"
+            />
+          </a>
+        </div>
+      </section>
+      <section id="blog">
+        <div class="title-container">blog:</div>
+        <div class="card-container">
+          <a
+            target="_blank"
+            href="https://medium.com/@manvendra22/reactjs-lessons-learned-from-the-mistakes-i-made-bf6db575d1e2"
+            class="card"
+          >
+            <img
+              loading="lazy"
+              class="content_image"
+              src="https://res.cloudinary.com/dracarys/image/upload/medium_1.png"
+            />
+          </a>
+        </div>
+      </section>
       <div class="footer">
         <div>Made with <span style="color: red;">&hearts;</span> in India</div>
         <div>&copy; 2020 - Manvendra Singh</div>

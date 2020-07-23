@@ -8,6 +8,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -25,49 +26,63 @@ a {
   color: inherit;
 }
 
+section {
+}
+
 .app {
   width: 80%;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 .icon {
-  height: 25px;
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  height: 50px;
-}
-
-.header .icon {
-  transition: all 0.2s ease;
-}
-
-.twitter_icon {
-  margin-top: 5px;
+  height: 20px;
   margin-right: 10px;
 }
 
-.linkedin_icon {
+.header {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  color: #57af7a;
+  font-size: 1.2rem;
 }
 
-.header .icon:hover {
-  transform: scale(1.2);
+.header a {
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
 }
 
-.hero {
-  max-width: 700px;
-  margin: 100px auto;
+.header a:hover {
+  cursor: pointer;
+  transform: translateY(-4px);
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skills {
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
+
+#projects {
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
+
+#blog {
+  margin-bottom: 70px;
 }
 
 .intro {
+  max-width: 700px;
   text-align: center;
-  margin-bottom: 120px;
-}
-
-.intro .icon {
-  margin-right: 5px;
 }
 
 .avatar-container {
@@ -86,10 +101,6 @@ a {
   margin-bottom: 1rem;
 }
 
-.main-text span {
-  /* font-size: 4.0rem; */
-}
-
 .sub-text {
   line-height: 1.4;
   font-size: 1.2rem;
@@ -103,30 +114,34 @@ a {
 .links {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #57af7a;
 }
 
 .link {
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  color: #57af7a;
-  transition: all 0.3s ease;
+  margin-right: 20px;
 }
 
-.first-link {
-  margin-right: 30px;
+.twitter_icon {
 }
 
-.link:hover {
-  cursor: pointer;
-  transform: translateY(-6px);
+.linkedin_icon {
+}
+
+.github_icon {
+}
+
+.resume_icon {
 }
 
 .code-wrapper {
+  width: 80%;
+  margin: auto;
   border-top: 2px solid white;
   transition: all 0.5s ease;
-  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.07);
 }
 
 .code-wrapper:hover {
@@ -179,12 +194,13 @@ a {
 .title-container {
   font-size: 1.6rem;
   color: #57af7a;
+  margin-bottom: 30px;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 .card {
@@ -224,6 +240,7 @@ a {
   display: flex;
   justify-content: space-between;
   color: #8b8ba7;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 767px) {

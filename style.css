@@ -75,7 +75,6 @@ a {
 }
 
 .nav a:hover {
-  cursor: pointer;
   transform: translateY(-4px);
 }
 
@@ -282,5 +281,26 @@ a {
 
   .card {
     width: 90%;
+  }
+
+  /* resetting hover values to original */
+
+  .resume_icon:hover,
+  .github_icon:hover,
+  .linkedin_icon:hover,
+  .twitter_icon:hover {
+    fill: #57af7a;
+  }
+
+  .nav a:hover {
+    transform: unset;
+  }
+
+  .code-wrapper:hover {
+    border-top: 2px solid white;
+  }
+
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
   }
 }

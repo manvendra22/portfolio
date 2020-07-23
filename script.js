@@ -61,12 +61,10 @@ function checkIntersectionValues() {
     const max = Math.max(...intersectionValues)
     const maxIndex = intersectionValues.findIndex(value => value === max)
 
-    if (targetElements[0] && targetElements[1] && targetElements[2] && targetElements[3]) {
-        targetElements[0].classList.remove('visible');
-        targetElements[1].classList.remove('visible');
-        targetElements[2].classList.remove('visible');
-        targetElements[3].classList.remove('visible');
+    targetElements?.[0]?.classList.remove('visible');
+    targetElements?.[1]?.classList.remove('visible');
+    targetElements?.[2]?.classList.remove('visible');
+    targetElements?.[3]?.classList.remove('visible');
 
-        targetElements[maxIndex].classList.add('visible');
-    }
+    targetElements?.[maxIndex]?.classList.add('visible');
 }

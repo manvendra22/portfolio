@@ -1,5 +1,5 @@
 const homeTarget = document.querySelector('#home');
-const skillsTarget = document.querySelector('#skills');
+const aboutTarget = document.querySelector('#about');
 const projectsTarget = document.querySelector('#projects');
 const blogTarget = document.querySelector('#blog');
 const targetElements = document.querySelectorAll('.nav_link')
@@ -13,13 +13,13 @@ const intersectionObserverOptions = {
 
 // initialize the observer with handlers
 var homeObserver = new IntersectionObserver(onHomeIntersection, intersectionObserverOptions);
-var skillsObserver = new IntersectionObserver(onSkillsIntersection, intersectionObserverOptions);
+var aboutObserver = new IntersectionObserver(onAboutIntersection, intersectionObserverOptions);
 var projectsObserver = new IntersectionObserver(onProjectsIntersection, intersectionObserverOptions);
 var blogObserver = new IntersectionObserver(onBlogIntersection, intersectionObserverOptions);
 
 // provide the observer with a target
 homeObserver.observe(homeTarget);
-skillsObserver.observe(skillsTarget);
+aboutObserver.observe(aboutTarget);
 projectsObserver.observe(projectsTarget);
 blogObserver.observe(blogTarget);
 
@@ -33,7 +33,7 @@ function onHomeIntersection(entries) {
     });
 }
 
-function onSkillsIntersection(entries) {
+function onAboutIntersection(entries) {
     entries.forEach(entry => {
         intersectionValues[1] = entry.intersectionRatio
         checkIntersectionValues()

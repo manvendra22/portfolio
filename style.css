@@ -17,10 +17,6 @@ body {
   background: #fff;
 }
 
-code {
-  font-family: "Roboto Mono", monospace;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -90,45 +86,26 @@ a {
   align-items: center;
 }
 
-#skills,
-#projects {
-  padding-top: 3rem;
-  margin-bottom: 6rem;
-}
-
-#blog {
-  padding-top: 3rem;
-  margin-bottom: 20rem;
-}
-
 .intro {
   max-width: 700px;
   text-align: center;
 }
 
-.avatar-container {
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-}
-
 .avatar {
-  width: 100%;
+  width: 180px;
   border-radius: 50%;
 }
 
 .main-text {
   font-size: 2.5rem;
-  margin: 1rem 0;
 }
 
 .sub-text {
-  line-height: 1.4;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 1.5rem;
 }
 
-.sub-text span {
+.highlight {
   background: #d2d9df;
 }
 
@@ -147,7 +124,45 @@ a {
   margin: unset;
 }
 
-.code-wrapper {
+#about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutme {
+  width: 60%;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill .icon {
+  height: 5rem;
+  margin: unset;
+}
+
+.title {
+  background: #d2d9df;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* .code-wrapper {
   width: 80%;
   margin: auto;
   border-top: 2px solid white;
@@ -176,11 +191,6 @@ a {
   margin-right: 0.75rem;
 }
 
-.skill {
-  display: flex;
-  margin-left: 1.25rem;
-}
-
 .code-1 {
   color: #ffc312;
 }
@@ -199,6 +209,16 @@ a {
 
 .code-5 {
   color: #75f7a6;
+} */
+
+#projects {
+  max-height: 200vh;
+  padding-top: 3rem;
+}
+
+#blog {
+  height: 100vh;
+  padding-top: 3rem;
 }
 
 .card-container {
@@ -288,7 +308,7 @@ a {
     transform: scale(1.3) !important;
   }
 
-  #skills,
+  #about,
   #projects {
     padding-top: 6rem;
   }

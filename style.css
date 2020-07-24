@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 20px;
   scroll-behavior: smooth;
 }
 
@@ -27,14 +27,9 @@ a {
   margin: 0 auto;
 }
 
-.icon {
-  height: 1.25rem;
-  margin-right: 0.5rem;
-}
-
 .svg_icon {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1rem;
+  height: 1rem;
   fill: #57af7a;
 }
 
@@ -58,15 +53,14 @@ a {
   position: fixed;
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
   color: #89c7a2;
   background: #fff;
-  top: 3rem;
-  left: 3rem;
+  top: 2rem;
+  left: 2rem;
 }
 
 .nav a {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   transition: all 0.3s ease;
 }
 
@@ -97,12 +91,12 @@ a {
 }
 
 .main-text {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .sub-text {
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .highlight {
@@ -117,7 +111,7 @@ a {
 }
 
 .link {
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
 }
 
 .link:first-child {
@@ -133,9 +127,8 @@ a {
 }
 
 .aboutme {
-  width: 60%;
-  font-size: 1.2rem;
-  margin-bottom: 5rem;
+  max-width: 700px;
+  margin-bottom: 3rem;
 }
 
 .skills {
@@ -144,22 +137,23 @@ a {
 }
 
 .skill {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .skill .icon {
-  height: 5rem;
+  height: 3rem;
   margin: unset;
 }
 
 .title {
   background: #d2d9df;
   padding: 0 0.5rem;
-  font-size: 1.5rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 /* .code-wrapper {
@@ -212,56 +206,77 @@ a {
 } */
 
 #projects {
-  max-height: 200vh;
-  padding-top: 3rem;
+  padding-top: 1rem;
+  margin-bottom: 4rem;
 }
 
-#blog {
-  height: 100vh;
-  padding-top: 3rem;
-}
-
-.card-container {
+.project-container {
   display: flex;
   flex-wrap: wrap;
   padding: 4%;
-  border-radius: 0.75rem;
-  border: 1px solid #eaeaea;
-  background-color: #fafafa;
 }
 
-.card {
+.project {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.project_intro {
   width: 48%;
   padding: 0.75rem;
-  margin-bottom: 4%;
+}
+
+.description {
+  margin-bottom: 1rem;
+  /* font-size: 0.8rem; */
+}
+
+.buttons {
+}
+
+.button {
+  color: #494949;
+  text-transform: uppercase;
+  border: 2px solid #494949;
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.button-primary {
+  background: #84fab0;
+}
+
+.button-secondary {
+  background: #fff;
+}
+
+.button:hover {
+  background: #8fd3f4;
+  transition: all 0.2s ease;
+}
+
+.project_image {
+  width: 48%;
+  padding: 0.75rem;
   background: #fff;
   border-radius: 0.75rem;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
-  transition: box-shadow 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-.card:nth-child(even) {
+/* .project_image:nth-child(even) {
   margin-left: 4%;
-}
+} */
 
-.card:last-child {
+/* .project_image:last-child {
   margin-bottom: unset;
-}
+} */
 
-.card:hover {
+.project_image:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
-}
-
-.card .title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-.title .tech {
-  display: flex;
-  justify-content: flex-end;
+  transform: scale(1.1);
 }
 
 .content_image {
@@ -284,7 +299,7 @@ a {
 
 @media only screen and (max-width: 991px) {
   html {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .nav {
@@ -292,12 +307,12 @@ a {
     width: 100%;
     top: 0;
     left: 0;
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .nav a {
     margin: unset;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
 
   .nav a:first-child {
@@ -308,37 +323,46 @@ a {
     transform: scale(1.3) !important;
   }
 
-  #about,
+  /* #about,
   #projects {
     padding-top: 6rem;
   }
 
   #blog {
     padding-top: 6rem;
-  }
+  } */
 
   .code-wrapper {
     width: unset;
   }
 
-  .card-container {
+  .project-container {
     justify-content: center;
   }
 
-  .card {
+  .project {
+    flex-direction: column;
+  }
+
+  .project_image,
+  .project_intro {
     width: 100%;
   }
 
-  .card:nth-child(even) {
+  .project_image {
+    width: 100%;
+  }
+
+  /* .project_image:nth-child(even) {
     margin-left: unset;
   }
 
-  .card:last-child {
+  .project_image:last-child {
     margin-bottom: unset;
-  }
+  } */
 
   .footer {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     justify-content: space-around;
   }
 
@@ -351,7 +375,7 @@ a {
   }
 
   .footer .links {
-    margin: 0 1rem;
+    margin: 0 0.8rem;
   }
 
   /* resetting hover values to original */
@@ -367,7 +391,7 @@ a {
     border-top: 2px solid white;
   }
 
-  .card:hover {
+  .project_image:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
   }
 }

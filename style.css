@@ -45,6 +45,10 @@ a {
   fill: #0077b5;
 }
 
+.medium_icon:hover {
+  fill: #212121;
+}
+
 .twitter_icon:hover {
   fill: #03a9f4;
 }

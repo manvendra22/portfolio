@@ -1,5 +1,7 @@
 # Portfolio Website
 
+> A zero dependency, no framework responsive web application.
+
 ![Screenshot](https://res.cloudinary.com/dracarys/image/upload/portfolio_website)
 
 ## Live links 

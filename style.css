@@ -61,6 +61,7 @@ a {
   background: #fff;
   top: 2rem;
   left: 2rem;
+  z-index: 10;
 }
 
 .nav a {

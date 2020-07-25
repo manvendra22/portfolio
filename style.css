@@ -27,32 +27,6 @@ a {
   margin: 0 auto;
 }
 
-.svg_icon {
-  width: 1rem;
-  height: 1rem;
-  fill: #57af7a;
-}
-
-.resume_icon:hover {
-  fill: #250902;
-}
-
-.github_icon:hover {
-  fill: #171515;
-}
-
-.linkedin_icon:hover {
-  fill: #0077b5;
-}
-
-.medium_icon:hover {
-  fill: #212121;
-}
-
-.twitter_icon:hover {
-  fill: #03a9f4;
-}
-
 .nav {
   position: fixed;
   display: flex;
@@ -118,6 +92,32 @@ a {
 
 .link:first-child {
   margin: unset;
+}
+
+.links .icon {
+  width: 1rem;
+  height: 1rem;
+  fill: #57af7a;
+}
+
+.resume_icon:hover {
+  fill: #250902;
+}
+
+.github_icon:hover {
+  fill: #171515;
+}
+
+.linkedin_icon:hover {
+  fill: #0077b5;
+}
+
+.medium_icon:hover {
+  fill: #212121;
+}
+
+.twitter_icon:hover {
+  fill: #03a9f4;
 }
 
 #about {

@@ -281,6 +281,14 @@ a {
     font-size: 18px;
   }
 
+  .main-text {
+    font-size: 1.8rem;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+  }
+
   .nav {
     flex-direction: row;
     width: 100%;

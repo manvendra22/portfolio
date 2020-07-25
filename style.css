@@ -306,10 +306,18 @@ a {
     margin-left: 1rem;
   }
 
+  .title {
+    text-align: center;
+  }
+
   #about,
   #projects {
     height: unset;
     padding-top: 5rem;
+  }
+
+  .description {
+    font-size: 1rem;
   }
 
   .code-wrapper {

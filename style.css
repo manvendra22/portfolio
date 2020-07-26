@@ -132,14 +132,13 @@ a {
 }
 
 .aboutme {
-  max-width: 700px;
+  max-width: 70%;
   margin-bottom: 3rem;
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
-  /* max-width: 700px; */
   text-align: center;
 }
 
@@ -164,7 +163,8 @@ a {
 }
 
 #projects {
-  margin: 5rem 0;
+  margin-bottom: 5rem;
+  padding-top: 3rem;
 }
 
 .project-container {
@@ -180,7 +180,8 @@ a {
 
 .project_intro {
   width: 50%;
-  padding: 0.75rem;
+  margin-right: 0.75rem;
+  /* padding: 0.75rem; */
 }
 
 .description {
@@ -190,15 +191,14 @@ a {
 
 .project_image {
   width: 50%;
-  padding: 0.75rem;
-  background: #fff;
-  border-radius: 0.75rem;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
-  transition: all 0.3s ease 0s;
+  /* padding: 0.75rem; */
+  /* border-radius: 0.75rem; */
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px; */
+  /* transition: all 0.3s ease 0s; */
 }
 
 .project_image:hover {
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px; */
 }
 
 .content_image {

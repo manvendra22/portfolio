@@ -23,7 +23,7 @@ a {
 }
 
 .app {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -139,11 +139,12 @@ a {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* max-width: 700px; */
+  text-align: center;
 }
 
 .skill {
-  margin-right: 1.5rem;
+  width: 16.5%;
   margin-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -163,13 +164,13 @@ a {
 }
 
 #projects {
-  margin-bottom: 5rem;
+  margin: 5rem 0;
 }
 
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 4%;
+  justify-content: center;
 }
 
 .project {
@@ -178,7 +179,7 @@ a {
 }
 
 .project_intro {
-  width: 48%;
+  width: 50%;
   padding: 0.75rem;
 }
 
@@ -188,7 +189,7 @@ a {
 }
 
 .project_image {
-  width: 48%;
+  width: 50%;
   padding: 0.75rem;
   background: #fff;
   border-radius: 0.75rem;
@@ -198,7 +199,6 @@ a {
 
 .project_image:hover {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px;
-  transform: scale(1.02);
 }
 
 .content_image {
@@ -281,6 +281,10 @@ a {
     font-size: 18px;
   }
 
+  .app {
+    width: 90%;
+  }
+
   .main-text {
     font-size: 1.8rem;
   }
@@ -310,9 +314,14 @@ a {
     text-align: center;
   }
 
+  .skill {
+    width: 25%;
+  }
+
   #about,
   #projects {
     height: unset;
+    margin-top: unset;
     padding-top: 5rem;
   }
 
@@ -320,25 +329,21 @@ a {
     font-size: 1rem;
   }
 
-  .code-wrapper {
-    width: unset;
-  }
-
-  .project-container {
-    justify-content: center;
-  }
-
   .project {
     flex-direction: column;
   }
 
-  .project_image,
   .project_intro {
     width: 100%;
+    padding: unset;
   }
 
   .project_image {
     width: 100%;
+  }
+
+  .buttons {
+    margin-bottom: 1rem;
   }
 
   .footer {
@@ -373,5 +378,11 @@ a {
 
   .project_image:hover {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .skill {
+    width: 33.33%;
   }
 }

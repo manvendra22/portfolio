@@ -309,7 +309,6 @@ a {
 
   #about,
   #projects {
-    height: unset;
     margin-top: unset;
     padding-top: 5rem;
   }

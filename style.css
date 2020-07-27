@@ -124,22 +124,17 @@ a {
 }
 
 #about {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 5rem 0;
+  padding-top: 3rem;
 }
 
 .aboutme {
-  max-width: 70%;
   margin-bottom: 3rem;
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
 }
 
 .skill {
@@ -156,6 +151,7 @@ a {
 }
 
 .title {
+  display: inline-block;
   background: #fbe7b2;
   padding: 0 0.5rem;
   margin-bottom: 1rem;
@@ -181,24 +177,17 @@ a {
 .project_intro {
   width: 50%;
   margin-right: 0.75rem;
-  /* padding: 0.75rem; */
 }
 
 .description {
   margin-bottom: 1rem;
-  font-size: 0.8rem;
 }
 
 .project_image {
   width: 50%;
-  /* padding: 0.75rem; */
-  /* border-radius: 0.75rem; */
-  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px; */
-  /* transition: all 0.3s ease 0s; */
 }
 
 .project_image:hover {
-  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 30px 60px; */
 }
 
 .content_image {
@@ -323,10 +312,6 @@ a {
     height: unset;
     margin-top: unset;
     padding-top: 5rem;
-  }
-
-  .description {
-    font-size: 1rem;
   }
 
   .project {

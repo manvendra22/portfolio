@@ -1,3 +1,7 @@
+AOS.init();
+
+
+
 const homeTarget = document.querySelector('#home');
 const aboutTarget = document.querySelector('#about');
 const projectsTarget = document.querySelector('#projects');

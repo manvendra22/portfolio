@@ -1,10 +1,11 @@
 # Portfolio Website
 
-> A zero dependency, no framework responsive web application.
+> A no framework(css/js) responsive web application.
 
 ![Screenshot](https://res.cloudinary.com/dracarys/image/upload/portfolio_website)
 
-## Live links 
+## Live links
+
 http://manvendra.netlify.app/
 
 ### Tech stack:

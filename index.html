@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-166232613-1"
@@ -35,7 +37,7 @@
         <a class="nav_link" href="#projects">projects</a>
       </nav>
       <section id="home">
-        <div class="intro">
+        <div class="intro" data-aos="fade-up" data-aos-duration="2000">
           <img
             loading="lazy"
             src="https://res.cloudinary.com/dracarys/image/upload/portfolio.jpg"
@@ -120,81 +122,124 @@
               </svg>
             </a>
           </div>
-          <a href="#about" class="pulseBtn"><span>Know More</span></a>
+          <a
+            href="#about"
+            class="pulseBtn"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-delay="1500"
+            ><span>Know More</span></a
+          >
         </div>
       </section>
       <section id="about">
-        <div class="title">Who am I:</div>
-        <div class="aboutme">
-          I am A Frontend developer with a keen eye for creating visually
-          pleasing design and interest in web performance.<br />
-          I love working with JavaScript and web technologies. I am an
-          enthusiastic learner with a focus on writing declarative,
-          maintainable, and clean accessible code that's readable by humans.<br />
-          My expertise and experience lie in working with React, Javascript,
-          Redux, and CSS and I'm quite confident with my experience and
-          knowledge in the web frontend.
-        </div>
-        <div class="title">My tech stack:</div>
-        <div class="skills">
-          <div class="skill">
-            <img
-              src="images/skills/javascript.svg"
-              alt="logo"
-              class="icon"
-            />Javascript
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <div>
+            <div class="title">Who am I:</div>
+            <div class="aboutme">
+              I am A Frontend developer with a keen eye for creating visually
+              pleasing design and interest in web performance.<br />
+              I love working with JavaScript and web technologies. I am an
+              enthusiastic learner with a focus on writing declarative,
+              maintainable, and clean accessible code that's readable by
+              humans.<br />
+              My expertise and experience lie in working with React, Javascript,
+              Redux, and CSS and I'm quite confident with my experience and
+              knowledge in the web frontend.
+            </div>
           </div>
-          <div class="skill">
-            <img src="images/skills/react.svg" alt="logo" class="icon" />React
-          </div>
-          <div class="skill">
-            <img src="images/skills/redux.svg" alt="logo" class="icon" />Redux
-          </div>
-          <div class="skill">
-            <img src="images/skills/html5.svg" alt="logo" class="icon" />HTML5
-          </div>
-          <div class="skill">
-            <img src="images/skills/css3.svg" alt="logo" class="icon" />CSS3
-          </div>
-          <div class="skill">
-            <img src="images/skills/sass.svg" alt="logo" class="icon" />SASS
-          </div>
-          <div class="skill">
-            <img src="images/skills/nextjs.svg" alt="logo" class="icon" />NextJS
-          </div>
-          <div class="skill">
-            <img src="images/skills/gatsby.svg" alt="logo" class="icon" />Gatsby
-          </div>
-          <div class="skill">
-            <img
-              src="images/skills/webpack.svg"
-              alt="logo"
-              class="icon"
-            />Webpack
-          </div>
-          <div class="skill">
-            <img src="images/skills/nodejs.svg" alt="logo" class="icon" />NodeJS
-          </div>
-          <div class="skill">
-            <img
-              src="images/skills/expressjs.svg"
-              alt="logo"
-              class="icon"
-            />ExpressJS
-          </div>
-          <div class="skill">
-            <img
-              src="images/skills/mongodb.svg"
-              alt="logo"
-              class="icon"
-            />MongoDB
+          <div>
+            <div class="title">My tech stack:</div>
+            <div class="skills">
+              <div class="skill">
+                <img
+                  src="images/skills/javascript.svg"
+                  alt="logo"
+                  class="icon"
+                />Javascript
+              </div>
+              <div class="skill">
+                <img
+                  src="images/skills/react.svg"
+                  alt="logo"
+                  class="icon"
+                />React
+              </div>
+              <div class="skill">
+                <img
+                  src="images/skills/redux.svg"
+                  alt="logo"
+                  class="icon"
+                />Redux
+              </div>
+              <div class="skill">
+                <img
+                  src="images/skills/html5.svg"
+                  alt="logo"
+                  class="icon"
+                />HTML5
+              </div>
+              <div class="skill">
+                <img src="images/skills/css3.svg" alt="logo" class="icon" />CSS3
+              </div>
+              <div class="skill">
+                <img src="images/skills/sass.svg" alt="logo" class="icon" />SASS
+              </div>
+              <div class="skill">
+                <img
+                  src="images/skills/nextjs.svg"
+                  alt="logo"
+                  class="icon"
+                />NextJS
+              </div>
+              <div class="skill">
+                <img
+                  src="images/skills/gatsby.svg"
+                  alt="logo"
+                  class="icon"
+                />Gatsby
+              </div>
+              <div class="skill">
+                <img
+                  src="images/skills/webpack.svg"
+                  alt="logo"
+                  class="icon"
+                />Webpack
+              </div>
+              <div class="skill">
+                <img
+                  src="images/skills/nodejs.svg"
+                  alt="logo"
+                  class="icon"
+                />NodeJS
+              </div>
+              <div class="skill">
+                <img
+                  src="images/skills/expressjs.svg"
+                  alt="logo"
+                  class="icon"
+                />ExpressJS
+              </div>
+              <div class="skill">
+                <img
+                  src="images/skills/mongodb.svg"
+                  alt="logo"
+                  class="icon"
+                />MongoDB
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <section id="projects">
         <div class="project-container">
           <div class="project">
-            <div class="project_intro">
+            <div
+              class="project_intro"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div class="title">Weather Check</div>
               <div class="description">
                 A mobile first responsive web application for checking weather
@@ -220,6 +265,9 @@
               target="_blank"
               href="https://weatherchek.netlify.app/"
               class="project_image"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="500"
             >
               <img
                 loading="lazy"
@@ -230,7 +278,11 @@
           </div>
 
           <div class="project">
-            <div class="project_intro">
+            <div
+              class="project_intro"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div class="title">Image Text Reader</div>
               <div class="description">
                 Image Text Reader is a responsive web app to read texts from an
@@ -255,6 +307,9 @@
               target="_blank"
               href="https://image-text-reader.herokuapp.com/"
               class="project_image"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="500"
             >
               <img
                 loading="lazy"
@@ -265,7 +320,11 @@
           </div>
 
           <div class="project">
-            <div class="project_intro">
+            <div
+              class="project_intro"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div class="title">Contacts Book</div>
               <div class="description">
                 Contacts Book is a responsive web app to store and manage
@@ -292,6 +351,9 @@
               target="_blank"
               href="https://contacts-book.netlify.app/"
               class="project_image"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="500"
             >
               <img
                 loading="lazy"
@@ -302,7 +364,11 @@
           </div>
 
           <div class="project">
-            <div class="project_intro">
+            <div
+              class="project_intro"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div class="title">React UI Kit</div>
               <div class="description">
                 React UI Kit is a web app I started to learn about building
@@ -328,6 +394,9 @@
               target="_blank"
               href="https://react-kit.netlify.app/"
               class="project_image"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="500"
             >
               <img
                 loading="lazy"
@@ -338,7 +407,11 @@
           </div>
 
           <div class="project">
-            <div class="project_intro">
+            <div
+              class="project_intro"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
               <div class="title">SMS Price Calculator</div>
               <div class="description">
                 SMS Price Calculator is a web app that uses the AmCharts world
@@ -366,6 +439,9 @@
               target="_blank"
               href="https://sms-price-calculator.netlify.app/"
               class="project_image"
+              data-aos="fade-left"
+              data-aos-duration="1500"
+              data-aos-delay="500"
             >
               <img
                 loading="lazy"

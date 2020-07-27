@@ -1,5 +1,5 @@
 AOS.init({
-    disable: 'tablet'
+    disable: 'mobile'
 });
 
 

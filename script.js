@@ -1,5 +1,5 @@
 ScrollReveal(
-    { duration: 3000, viewFactor: 0.5 }
+    { duration: 3000, viewFactor: 0.5, mobile: false }
 ).reveal('.intro');
 
 ScrollReveal(
@@ -8,8 +8,8 @@ ScrollReveal(
 
 ScrollReveal({ delay: 0, duration: 3000, origin: 'bottom', distance: '60px' }).reveal('.about-first');
 ScrollReveal({ delay: 1500, duration: 3000 }).reveal('.about-second');
-ScrollReveal({ delay: 0, duration: 3000, interval: 3000, origin: 'left' }).reveal('.project_intro');
-ScrollReveal({ delay: 1500, duration: 3000, interval: 3000, origin: 'right' }).reveal('.project_image');
+ScrollReveal({ delay: 0, duration: 3000, origin: 'left' }).reveal('.project_intro');
+ScrollReveal({ delay: 1500, duration: 3000, origin: 'right' }).reveal('.project_image');
 
 const homeTarget = document.querySelector('#home');
 const aboutTarget = document.querySelector('#about');

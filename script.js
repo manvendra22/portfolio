@@ -1,7 +1,14 @@
-AOS.init({
-    disable: 'mobile'
-});
+ScrollReveal(
+    { duration: 2500 }
+).reveal('.intro');
 
+ScrollReveal(
+    { delay: 1500, duration: 1500 }
+).reveal('.pulseBtn');
+
+ScrollReveal({ delay: 0, duration: 2500 }).reveal('.about-first');
+ScrollReveal({ delay: 0, duration: 2500 }).reveal('.about-second');
+ScrollReveal({ delay: 0, duration: 2500 }).reveal('.project');
 
 
 const homeTarget = document.querySelector('#home');

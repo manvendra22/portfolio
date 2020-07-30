@@ -1,9 +1,9 @@
 ScrollReveal(
-    { delay: 500, duration: 2000 }
+    { delay: 0, duration: 2000 }
 ).reveal('.intro');
 
 ScrollReveal(
-    { delay: 500, duration: 2000 }
+    { delay: 0, duration: 2000 }
 ).reveal('.nav');
 
 ScrollReveal(

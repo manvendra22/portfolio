@@ -10,7 +10,7 @@ ScrollReveal(
     { delay: 1500, duration: 1500 }
 ).reveal('.pulseBtn');
 
-ScrollReveal({ delay: 500, duration: 2000, origin: 'bottom', distance: '30px', viewFactor: 0.5, mobile: false }).reveal('.about-first');
+ScrollReveal({ delay: 500, duration: 2000, origin: 'bottom', distance: '30px', viewFactor: 1, mobile: false }).reveal('.about-first');
 ScrollReveal({ delay: 1500, duration: 2000 }).reveal('.about-second');
 ScrollReveal({ delay: 500, duration: 2000, origin: 'left' }).reveal('.project_intro');
 ScrollReveal({ delay: 1500, duration: 2000, origin: 'right' }).reveal('.project_image');

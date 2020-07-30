@@ -113,15 +113,15 @@ const DARK = {
 }
 
 function changeTheme() {
-    let currentMode = localStorage.getItem('mode');
-    let theme = LIGHT
-    let nextMode = 'DARK'
-    let image_url = 'images/moon.svg'
+    let currentMode = localStorage.getItem('mode') || 'DARK'
+    let theme = DARK
+    let nextMode = 'LIGHT'
+    let image_url = 'images/sun.svg'
 
-    if (currentMode === 'DARK') {
-        theme = DARK
-        nextMode = 'LIGHT';
-        image_url = 'images/sun.svg'
+    if (currentMode === 'LIGHT') {
+        theme = LIGHT
+        nextMode = 'DARK';
+        image_url = 'images/moon.svg'
     }
 
     document.querySelector('.dark-mode').src = image_url

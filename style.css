@@ -65,10 +65,15 @@ a {
   text-align: center;
 }
 
-.avatar {
-  width: 180px;
-  border-radius: 50%;
+.avatar-container {
+  height: 180px;
+  text-align: center;
   margin-bottom: 0.5rem;
+}
+
+.avatar {
+  height: 100%;
+  border-radius: 50%;
 }
 
 .main-text {

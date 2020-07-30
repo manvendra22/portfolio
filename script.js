@@ -1,3 +1,7 @@
+/*
+    Scroll reveal animations
+*/
+
 ScrollReveal(
     { delay: 0, duration: 2000 }
 ).reveal('.intro');
@@ -14,6 +18,11 @@ ScrollReveal({ delay: 500, duration: 2000, origin: 'bottom', distance: '30px', v
 ScrollReveal({ delay: 1500, duration: 2000 }).reveal('.about-second');
 ScrollReveal({ delay: 500, duration: 2000, origin: 'left' }).reveal('.project_intro');
 ScrollReveal({ delay: 1500, duration: 2000, origin: 'right' }).reveal('.project_image');
+
+/*
+    Navigation active handlers
+*/
+
 
 const homeTarget = document.querySelector('#home');
 const aboutTarget = document.querySelector('#about');
@@ -72,4 +81,45 @@ function checkIntersectionValues() {
     targetElements?.[2]?.classList.remove('visible');
 
     targetElements?.[maxIndex]?.classList.add('visible');
+}
+
+
+/*
+    Dark mode theme
+*/
+
+export const LIGHT = {
+    '--color-bg': '#fff',
+    '--color-text-primary': '#1f4160',
+    '--color-primary': '#57af7a',
+    '--color-primary-light': '#89c7a2',
+    '--color-highlight': '#1f4160',
+    '--color-highlight-bg': '#fbe7b2',
+    '--color-border': '#ddd',
+    '--color-btn': '#5851ec',
+    '--color-btn-bg': '#e5edff'
+}
+
+export const DARK = {
+    '--color-bg': '#151515',
+    '--color-text-primary': '#bdbdc3',
+    '--color-primary': '#57af7a',
+    '--color-primary-light': '#89c7a2',
+    '--color-highlight': '#1f4160',
+    '--color-highlight-bg': '#fbe7b2',
+    '--color-border': '#ddd',
+    '--color-btn': '#5851ec',
+    '--color-btn-bg': '#e5edff'
+}
+
+function changeTheme() {
+    const currentMode = localStorage.getItem('mode') || 'LIGHT'
+
+    const theme = currentMode === 'LIGHT' ? LIGHT : DARK
+    Object.keys(theme).forEach(key => {
+        const value = theme[key];
+        document.documentElement.style.setProperty(key, value)
+    });
+
+    localStorage.setItem('mode', currentMode)
 }

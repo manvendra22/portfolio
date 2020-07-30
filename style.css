@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-bg: #fff;
+  --color-text-primary: #1f4160;
+  --color-primary: #57af7a;
+  --color-primary-light: #89c7a2;
+  --color-highlight: #1f4160;
+  --color-highlight-bg: #fbe7b2;
+  --color-border: #ddd;
+  --color-btn: #5851ec;
+  --color-btn-bg: #e5edff;
+}
+
 html {
   font-size: 20px;
   scroll-behavior: smooth;
@@ -13,8 +25,8 @@ html {
 
 body {
   font-family: "Titillium Web", sans-serif;
-  color: #1f4160;
-  background: #fff;
+  color: var(--color-text-primary);
+  background: var(--color-bg);
 }
 
 a {
@@ -32,7 +44,7 @@ a {
   position: fixed;
   display: flex;
   flex-direction: column;
-  color: #89c7a2;
+  color: var(--color-primary-light);
   background: #fff;
   top: 2rem;
   left: 2.5rem;
@@ -45,11 +57,11 @@ a {
 }
 
 .nav a:hover {
-  color: #57af7a;
+  color: var(--color-primary);
 }
 
 .nav .visible {
-  color: #57af7a;
+  color: var(--color-primary);
   transform: scale(1.2);
 }
 
@@ -90,7 +102,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #57af7a;
+  color: var(--color-primary);
   margin-bottom: 2rem;
 }
 
@@ -105,7 +117,7 @@ a {
 .links .icon {
   width: 1rem;
   height: 1rem;
-  fill: #57af7a;
+  fill: var(--color-primary);
 }
 
 .resume_icon:hover {
@@ -157,7 +169,8 @@ a {
 
 .title {
   display: inline-block;
-  background: #fbe7b2;
+  color: var(--color-highlight);
+  background: var(--color-highlight-bg);
   padding: 0 0.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
@@ -194,7 +207,7 @@ a {
 
 .content_image {
   width: 100%;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border);
   border-radius: 0.5rem;
 }
 
@@ -218,8 +231,8 @@ a {
   display: inline-block;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  color: hsl(243, 80%, 62%);
-  background-color: hsl(222, 100%, 95%);
+  color: var(--color-btn);
+  background-color: var(--color-btn-bg);
   border-radius: 0.3rem;
   box-sizing: border-box;
 }
@@ -244,12 +257,12 @@ a {
   transform: translate(-101%, -50%);
   width: 100%;
   height: 100%;
-  background-color: hsl(243, 80%, 62%);
+  background-color: var(--color-btn);
   transition: transform 0.25s cubic-bezier(0.7, 0, 0.9, 1);
 }
 
 .overlayLeftBtn:hover span {
-  color: hsl(222, 100%, 95%);
+  color: var(--color-btn-bg);
 }
 
 .overlayLeftBtn:hover::before {
@@ -325,7 +338,7 @@ a {
   .github_icon:hover,
   .linkedin_icon:hover,
   .twitter_icon:hover {
-    fill: #57af7a;
+    fill: var(--color-primary);
   }
 
   .code-wrapper:hover {

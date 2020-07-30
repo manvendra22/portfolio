@@ -49,7 +49,7 @@ a {
 
 .nav .visible {
   color: #57af7a;
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 #home {
@@ -61,14 +61,13 @@ a {
 }
 
 .intro {
-  max-width: 700px;
   text-align: center;
 }
 
 .avatar-container {
   height: 180px;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .avatar {
@@ -83,7 +82,7 @@ a {
 
 .sub-text {
   font-size: 1.2rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .links {
@@ -95,7 +94,7 @@ a {
 }
 
 .link {
-  margin-left: 1.2rem;
+  margin-left: 1.5rem;
 }
 
 .link:first-child {
@@ -129,8 +128,8 @@ a {
 }
 
 #about {
-  margin: 5rem 0;
-  padding-top: 3rem;
+  margin-bottom: 4rem;
+  padding-top: 2.5rem;
 }
 
 .aboutme {
@@ -164,8 +163,8 @@ a {
 }
 
 #projects {
-  margin-bottom: 5rem;
-  padding-top: 3rem;
+  margin-bottom: 6rem;
+  padding-top: 2.5rem;
 }
 
 .project-container {
@@ -190,9 +189,6 @@ a {
 
 .project_image {
   width: 50%;
-}
-
-.project_image:hover {
 }
 
 .content_image {
@@ -279,14 +275,6 @@ a {
     width: 90%;
   }
 
-  .main-text {
-    font-size: 1.8rem;
-  }
-
-  .sub-text {
-    font-size: 1rem;
-  }
-
   .nav {
     flex-direction: row;
     width: 100%;
@@ -304,17 +292,12 @@ a {
     margin-left: 1rem;
   }
 
-  .title {
-    text-align: center;
-  }
-
   .skill {
     width: 25%;
   }
 
   #about,
   #projects {
-    margin-top: unset;
     padding-top: 5rem;
   }
 
@@ -335,23 +318,6 @@ a {
     margin-bottom: 1rem;
   }
 
-  .footer {
-    padding: 0 1rem;
-    justify-content: space-around;
-  }
-
-  .footer .link {
-    margin-left: 0.8rem;
-  }
-
-  .footer .link:first-child {
-    margin-left: unset;
-  }
-
-  .footer .links {
-    margin: 0 0.8rem;
-  }
-
   /* resetting hover values to original */
 
   .resume_icon:hover,
@@ -370,7 +336,28 @@ a {
   }
 }
 
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 609px) {
+  html {
+    font-size: 16px;
+  }
+
+  .footer {
+    padding: 0 1rem;
+    justify-content: space-around;
+  }
+
+  .footer .link {
+    margin-left: 0.8rem;
+  }
+
+  .footer .link:first-child {
+    margin-left: unset;
+  }
+
+  .footer .links {
+    margin: 0 0.8rem;
+  }
+
   .skill {
     width: 33.33%;
   }

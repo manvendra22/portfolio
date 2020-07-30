@@ -39,13 +39,19 @@ a {
   margin: 0 auto;
 }
 
+.dark-mode {
+  position: fixed;
+  top: 2rem;
+  right: 2.5rem;
+}
+
 .nav {
   font-family: "Ubuntu", sans-serif;
   position: fixed;
   display: flex;
   flex-direction: column;
   color: var(--color-primary-light);
-  background: #fff;
+  background: var(--color-bg);
   top: 2rem;
   left: 2.5rem;
   z-index: 10;

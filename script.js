@@ -88,7 +88,7 @@ function checkIntersectionValues() {
     Dark mode theme
 */
 
-export const LIGHT = {
+const LIGHT = {
     '--color-bg': '#fff',
     '--color-text-primary': '#1f4160',
     '--color-primary': '#57af7a',
@@ -100,7 +100,7 @@ export const LIGHT = {
     '--color-btn-bg': '#e5edff'
 }
 
-export const DARK = {
+const DARK = {
     '--color-bg': '#151515',
     '--color-text-primary': '#bdbdc3',
     '--color-primary': '#57af7a',
@@ -113,13 +113,22 @@ export const DARK = {
 }
 
 function changeTheme() {
-    const currentMode = localStorage.getItem('mode') || 'LIGHT'
+    let currentMode = localStorage.getItem('mode');
+    let theme = LIGHT
+    let nextMode = 'DARK'
+    let image_url = 'images/moon.svg'
 
-    const theme = currentMode === 'LIGHT' ? LIGHT : DARK
+    if (currentMode === 'DARK') {
+        theme = DARK
+        nextMode = 'LIGHT';
+        image_url = 'images/sun.svg'
+    }
+
+    document.querySelector('.dark-mode').src = image_url
     Object.keys(theme).forEach(key => {
         const value = theme[key];
         document.documentElement.style.setProperty(key, value)
     });
 
-    localStorage.setItem('mode', currentMode)
+    localStorage.setItem('mode', nextMode)
 }

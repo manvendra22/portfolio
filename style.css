@@ -28,6 +28,7 @@ a {
 }
 
 .nav {
+  font-family: "Ubuntu", sans-serif;
   position: fixed;
   display: flex;
   flex-direction: column;

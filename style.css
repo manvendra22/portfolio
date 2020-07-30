@@ -341,6 +341,14 @@ a {
     font-size: 16px;
   }
 
+  .main-text {
+    font-size: 1.8rem;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+  }
+
   .footer {
     padding: 0 1rem;
     justify-content: space-around;

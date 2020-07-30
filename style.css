@@ -240,7 +240,6 @@ a {
   color: var(--color-btn);
   background-color: var(--color-btn-bg);
   border-radius: 0.3rem;
-  box-sizing: border-box;
 }
 
 .overlayLeftBtn {
@@ -257,12 +256,12 @@ a {
 .overlayLeftBtn::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 0;
   border-radius: 0.3rem;
   transform: translate(-101%, -50%);
   width: 100%;
-  height: 100%;
+  height: 101%;
   background-color: var(--color-btn);
   transition: transform 0.25s cubic-bezier(0.7, 0, 0.9, 1);
 }

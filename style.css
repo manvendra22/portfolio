@@ -43,6 +43,7 @@ a {
   position: fixed;
   top: 2rem;
   right: 2.5rem;
+  cursor: pointer;
 }
 
 .nav {
@@ -292,6 +293,11 @@ a {
 
   .app {
     width: 90%;
+  }
+
+  .dark-mode {
+    top: 1.5rem;
+    right: 1.5rem;
   }
 
   .nav {

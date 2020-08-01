@@ -18,6 +18,11 @@
   --color-btn-bg: #e5edff;
   --color-btn-shadow: rgba(230, 237, 255, 0.7);
   --color-btn-shadow-anime: rgba(230, 237, 255, 0);
+  --color-icon-resume: #250902;
+  --color-icon-github: #171515;
+  --color-icon-linkedin: #0077b5;
+  --color-icon-medium: #212121;
+  --color-icon-twitter: #03a9f4;
 }
 
 html {
@@ -129,24 +134,24 @@ a {
   fill: var(--color-primary);
 }
 
-.resume_icon:hover {
-  fill: #250902;
+.resume-icon:hover {
+  fill: var(--color-icon-resume);
 }
 
-.github_icon:hover {
-  fill: #171515;
+.github-icon:hover {
+  fill: var(--color-icon-github);
 }
 
-.linkedin_icon:hover {
-  fill: #0077b5;
+.linkedin-icon:hover {
+  fill: var(--color-icon-linkedin);
 }
 
-.medium_icon:hover {
-  fill: #212121;
+.medium-icon:hover {
+  fill: var(--color-icon-medium);
 }
 
-.twitter_icon:hover {
-  fill: #03a9f4;
+.twitter-icon:hover {
+  fill: var(--color-icon-twitter);
 }
 
 #about {
@@ -201,7 +206,7 @@ a {
   margin-bottom: 3rem;
 }
 
-.project_intro {
+.project-intro {
   width: 50%;
   margin-right: 0.75rem;
 }
@@ -210,11 +215,11 @@ a {
   margin-bottom: 1rem;
 }
 
-.project_image {
+.project-image {
   width: 50%;
 }
 
-.content_image {
+.content-image {
   width: 100%;
   border: 1px solid var(--color-border);
   border-radius: 0.5rem;
@@ -332,26 +337,17 @@ a {
     flex-direction: column;
   }
 
-  .project_intro {
+  .project-intro {
     width: 100%;
     padding: unset;
   }
 
-  .project_image {
+  .project-image {
     width: 100%;
   }
 
   .buttons {
     margin-bottom: 1rem;
-  }
-
-  /* resetting hover values to original */
-
-  .resume_icon:hover,
-  .github_icon:hover,
-  .linkedin_icon:hover,
-  .twitter_icon:hover {
-    fill: var(--color-primary);
   }
 }
 

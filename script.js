@@ -119,10 +119,10 @@ const DARK = {
     '--color-btn-bg': '#1e1e30',
     '--color-btn-shadow': 'rgba(30, 30, 48, 0.7)',
     '--color-btn-shadow-anime': 'rgba(30, 30, 48, 0)',
-    '--color-icon-resume': '#1e1e30',
-    '--color-icon-github': '#1e1e30',
+    '--color-icon-resume': '#5851ec',
+    '--color-icon-github': '#5851ec',
     '--color-icon-linkedin': '#0077b5',
-    '--color-icon-medium': '#212121',
+    '--color-icon-medium': '#5851ec',
     '--color-icon-twitter': '#03a9f4'
 }
 

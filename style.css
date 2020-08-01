@@ -51,6 +51,7 @@ a {
   top: 2rem;
   right: 2.5rem;
   cursor: pointer;
+  z-index: 2;
 }
 
 .nav {
@@ -62,7 +63,7 @@ a {
   background: var(--color-bg);
   top: 2rem;
   left: 2.5rem;
-  z-index: 10;
+  z-index: 1;
   visibility: hidden;
 }
 

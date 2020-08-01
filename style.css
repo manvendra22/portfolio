@@ -63,6 +63,7 @@ a {
   top: 2rem;
   left: 2.5rem;
   z-index: 10;
+  visibility: hidden;
 }
 
 .nav a {
@@ -89,6 +90,7 @@ a {
 
 .intro {
   text-align: center;
+  visibility: hidden;
 }
 
 .avatar-container {

@@ -19,10 +19,10 @@ ScrollReveal({ delay: 1500, duration: 2000 }).reveal('.about-second');
 ScrollReveal({ delay: 500, duration: 2000, origin: 'left' }).reveal('.project_intro');
 ScrollReveal({ delay: 1500, duration: 2000, origin: 'right' }).reveal('.project_image');
 
+
 /*
     Navigation active handlers
 */
-
 
 const homeTarget = document.querySelector('#home');
 const aboutTarget = document.querySelector('#about');

@@ -97,7 +97,9 @@ const LIGHT = {
     '--color-highlight-bg': '#fbe7b2',
     '--color-border': '#ddd',
     '--color-btn': '#5851ec',
-    '--color-btn-bg': '#e5edff'
+    '--color-btn-bg': '#e5edff',
+    '--color-btn-shadow': 'rgba(230, 237, 255, 0.7)',
+    '--color-btn-shadow-anime': 'rgba(230, 237, 255, 0)'
 }
 
 const DARK = {
@@ -109,7 +111,9 @@ const DARK = {
     '--color-highlight-bg': '#fbe7b2',
     '--color-border': '#ddd',
     '--color-btn': '#5851ec',
-    '--color-btn-bg': '#e5edff'
+    '--color-btn-bg': '#1e1e30',
+    '--color-btn-shadow': 'rgba(30, 30, 48, 0.7)',
+    '--color-btn-shadow-anime': 'rgba(30, 30, 48, 0)'
 }
 
 function changeTheme() {

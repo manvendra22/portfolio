@@ -16,6 +16,8 @@
   --color-border: #ddd;
   --color-btn: #5851ec;
   --color-btn-bg: #e5edff;
+  --color-btn-shadow: rgba(230, 237, 255, 0.7);
+  --color-btn-shadow-anime: rgba(230, 237, 255, 0);
 }
 
 html {
@@ -276,13 +278,13 @@ a {
 }
 
 .pulseBtn {
-  box-shadow: 0 0 0 0 rgba(230, 237, 255, 0.7);
+  box-shadow: 0 0 0 0 var(--color-btn-shadow);
   animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
 @keyframes pulse {
   to {
-    box-shadow: 0 0 0 30px rgba(230, 237, 255, 0);
+    box-shadow: 0 0 0 30px var(--color-btn-shadow-anime);
   }
 }
 
@@ -350,14 +352,6 @@ a {
   .linkedin_icon:hover,
   .twitter_icon:hover {
     fill: var(--color-primary);
-  }
-
-  .code-wrapper:hover {
-    border-top: 2px solid white;
-  }
-
-  .project_image:hover {
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 5px 10px;
   }
 }
 

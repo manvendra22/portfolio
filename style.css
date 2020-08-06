@@ -32,6 +32,7 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
+  line-height: 1.5rem;
   color: var(--color-text-primary);
   background: var(--color-bg);
 }
@@ -107,7 +108,7 @@ a {
 
 .main-text {
   font-size: 2rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .sub-text {

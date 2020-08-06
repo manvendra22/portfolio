@@ -3,21 +3,23 @@
 */
 
 ScrollReveal(
-    { delay: 0, duration: 3000 }
+    { delay: 0, duration: 2000 }
 ).reveal('.intro');
 
 ScrollReveal(
-    { delay: 1000, origin: 'top', distance: '30px', duration: 2000 }
-).reveal('.nav, .dark-mode');
+    { delay: 1000, origin: 'top', distance: '30px', duration: 1500 }
+).reveal('.links');
+
+ScrollReveal().reveal('.nav, .dark-mode');
 
 ScrollReveal(
-    { delay: 2000, distance: '10px', duration: 2000 }
+    { delay: 2000, origin: 'right', distance: '1000px' }
 ).reveal('.pulseBtn');
 
-ScrollReveal({ delay: 500, duration: 2000, origin: 'bottom', distance: '30px', viewFactor: 1, mobile: false }).reveal('.about-first');
-ScrollReveal({ delay: 1500, duration: 2000 }).reveal('.about-second');
-ScrollReveal({ delay: 500, duration: 2000, origin: 'left' }).reveal('.project-intro');
-ScrollReveal({ delay: 1500, duration: 2000, origin: 'right' }).reveal('.project-image');
+ScrollReveal({ delay: 500, origin: 'bottom', distance: '30px', viewFactor: 1, mobile: false }).reveal('.about-first');
+ScrollReveal({ delay: 1000 }).reveal('.about-second');
+ScrollReveal({ delay: 500, origin: 'left' }).reveal('.project-intro');
+ScrollReveal({ delay: 1000, origin: 'right' }).reveal('.project-image');
 
 
 /*

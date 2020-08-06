@@ -3,7 +3,7 @@
 */
 
 ScrollReveal(
-    { delay: 0, duration: 2000 }
+    { delay: 200, duration: 2000 }
 ).reveal('.intro');
 
 ScrollReveal(

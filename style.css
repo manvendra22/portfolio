@@ -65,7 +65,6 @@ a {
   top: 2rem;
   left: 2.5rem;
   z-index: 1;
-  visibility: hidden;
 }
 
 .nav a {

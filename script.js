@@ -10,10 +10,10 @@ ScrollReveal(
     { delay: 1000, origin: 'top', distance: '30px', duration: 1500 }
 ).reveal('.links');
 
-ScrollReveal().reveal('.nav, .dark-mode');
+ScrollReveal({ mobile: false }).reveal('.nav, .dark-mode');
 
 ScrollReveal(
-    { delay: 2000, origin: 'right', distance: '1000px' }
+    { delay: 2000, origin: 'right', distance: '1000px', mobile: true }
 ).reveal('.pulseBtn');
 
 ScrollReveal({ delay: 500, origin: 'bottom', distance: '30px', viewFactor: 1, mobile: false }).reveal('.about-first');

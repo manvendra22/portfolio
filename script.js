@@ -1,28 +1,4 @@
 /*
-    Scroll reveal animations
-*/
-
-ScrollReveal(
-    { delay: 200, duration: 2000 }
-).reveal('.intro');
-
-ScrollReveal(
-    { delay: 1000, origin: 'top', distance: '30px', duration: 1500 }
-).reveal('.links');
-
-ScrollReveal({ mobile: false }).reveal('.nav, .dark-mode');
-
-ScrollReveal(
-    { delay: 2000, origin: 'right', distance: '1000px', mobile: true }
-).reveal('.pulseBtn');
-
-ScrollReveal({ delay: 500, origin: 'bottom', distance: '30px', viewFactor: 1, mobile: false }).reveal('.about-first');
-ScrollReveal({ delay: 1000 }).reveal('.about-second');
-ScrollReveal({ delay: 500, origin: 'left' }).reveal('.project-intro');
-ScrollReveal({ delay: 1000, origin: 'right' }).reveal('.project-image');
-
-
-/*
     Navigation active handlers
 */
 
@@ -84,6 +60,30 @@ function checkIntersectionValues() {
 
     targetElements?.[maxIndex]?.classList.add('visible');
 }
+
+
+/*
+    Scroll reveal animations
+*/
+
+ScrollReveal(
+    { delay: 200, duration: 2000 }
+).reveal('.intro');
+
+ScrollReveal(
+    { delay: 1000, origin: 'top', distance: '30px', duration: 1500 }
+).reveal('.links');
+
+ScrollReveal({ mobile: false }).reveal('.nav, .dark-mode');
+
+ScrollReveal(
+    { delay: 2000, origin: 'right', distance: '1000px', mobile: true }
+).reveal('.pulseBtn');
+
+ScrollReveal({ delay: 500, origin: 'bottom', distance: '30px', viewFactor: 1, mobile: false }).reveal('.about-first');
+ScrollReveal({ delay: 1000 }).reveal('.about-second');
+ScrollReveal({ delay: 500, origin: 'left' }).reveal('.project-intro');
+ScrollReveal({ delay: 1000, origin: 'right' }).reveal('.project-image');
 
 
 /*

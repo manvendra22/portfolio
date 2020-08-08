@@ -63,6 +63,7 @@ a {
   background-size: cover;
   transition: background-image 0.9s;
   box-shadow: 0px 2px 5px 1px gray;
+  visibility: hidden;
 }
 
 .dark-mode-toggle:before {
@@ -98,6 +99,7 @@ a {
   top: 2rem;
   left: 2.5rem;
   z-index: 2;
+  visibility: hidden;
 }
 
 .nav a {
@@ -342,6 +344,7 @@ a {
     top: 1.5rem;
     right: 1.5rem;
     z-index: 3;
+    visibility: unset;
   }
 
   .nav {
@@ -350,6 +353,7 @@ a {
     top: 0;
     left: 0;
     padding: 1.5rem;
+    visibility: unset;
   }
 
   .nav a {
@@ -357,12 +361,12 @@ a {
     margin-right: 2rem;
   }
 
-  .skill {
-    width: 25%;
-  }
-
   .intro {
     visibility: unset;
+  }
+
+  .skill {
+    width: 25%;
   }
 
   #about,

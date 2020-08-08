@@ -47,12 +47,46 @@ a {
   margin: 0 auto;
 }
 
-.dark-mode {
+/* Toggle button css https://blog.prototypr.io/create-a-scenic-day-and-night-toggle-button-with-html-and-css-37a8e2532e68 */
+
+.dark-mode-toggle {
   position: fixed;
   top: 2rem;
   right: 2.5rem;
   cursor: pointer;
-  z-index: 2;
+  -webkit-appearance: none;
+  outline: none;
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  background-image: url(https://i.postimg.cc/857jHw2q/Screenshot-2020-04-16-at-1-07-06-PM.png);
+  background-size: cover;
+  transition: background-image 0.9s;
+  box-shadow: 0px 2px 5px 1px gray;
+}
+
+.dark-mode-toggle:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  /* background-color: navy; */
+  border-radius: 50px;
+  transition: all 0.9s;
+  background-color: #f7ca33;
+}
+
+.dark-mode-toggle:checked {
+  background-image: url(https://i.postimg.cc/Hn0nstVK/Screenshot-2020-04-16-at-1-07-19-PM.png);
+  transition: background-image 0.9s;
+}
+
+.dark-mode-toggle:checked:before {
+  transform: translate(100%);
+  transition: all 0.9s;
+  background-color: #ecf0f3;
 }
 
 .nav {
@@ -64,7 +98,7 @@ a {
   background: var(--color-bg);
   top: 2rem;
   left: 2.5rem;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav a {
@@ -305,9 +339,10 @@ a {
     width: 90%;
   }
 
-  .dark-mode {
+  .dark-mode-toggle {
     top: 1.5rem;
     right: 1.5rem;
+    z-index: 3;
   }
 
   .nav {
@@ -320,15 +355,15 @@ a {
 
   .nav a {
     margin: unset;
-    margin-left: 2rem;
-  }
-
-  .nav a:first-child {
-    margin-left: 1rem;
+    margin-right: 2rem;
   }
 
   .skill {
     width: 25%;
+  }
+
+  .intro {
+    visibility: unset;
   }
 
   #about,
@@ -357,6 +392,16 @@ a {
 @media only screen and (max-width: 609px) {
   html {
     font-size: 16px;
+  }
+
+  .dark-mode-toggle {
+    width: 40px;
+    height: 20px;
+  }
+
+  .dark-mode-toggle:before {
+    height: 20px;
+    width: 20px;
   }
 
   .main-text {

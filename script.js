@@ -67,20 +67,20 @@ function checkIntersectionValues() {
 */
 
 ScrollReveal(
-    { delay: 200, duration: 2000 }
+    { delay: 200, duration: 2000, mobile: false }
 ).reveal('.intro');
 
 ScrollReveal(
     { delay: 1000, origin: 'top', distance: '30px', duration: 1500 }
 ).reveal('.links');
 
-ScrollReveal({ mobile: false }).reveal('.nav, .dark-mode');
+ScrollReveal().reveal('.nav, .dark-mode-toggle');
 
 ScrollReveal(
-    { delay: 2000, origin: 'right', distance: '1000px', mobile: true }
+    { delay: 2000, origin: 'right', distance: '1000px' }
 ).reveal('.pulseBtn');
 
-ScrollReveal({ delay: 500, origin: 'bottom', distance: '30px', viewFactor: 1, mobile: false }).reveal('.about-first');
+ScrollReveal({ delay: 500, origin: 'bottom', distance: '30px', viewFactor: 1 }).reveal('.about-first');
 ScrollReveal({ delay: 1000 }).reveal('.about-second');
 ScrollReveal({ delay: 500, origin: 'left' }).reveal('.project-intro');
 ScrollReveal({ delay: 1000, origin: 'right' }).reveal('.project-image');
@@ -128,23 +128,17 @@ const DARK = {
     '--color-icon-twitter': '#03a9f4'
 }
 
-function changeTheme() {
-    let currentMode = localStorage.getItem('mode') || 'DARK'
-    let theme = DARK
-    let nextMode = 'LIGHT'
-    let image_url = 'images/sun.svg'
+const checkbox = document.getElementById("darkModeToggle");
 
-    if (currentMode === 'LIGHT') {
-        theme = LIGHT
-        nextMode = 'DARK';
-        image_url = 'images/moon.svg'
+function changeTheme() {
+    let theme = LIGHT
+
+    if (checkbox.checked == true) {
+        theme = DARK
     }
 
-    document.querySelector('.dark-mode').src = image_url
     Object.keys(theme).forEach(key => {
         const value = theme[key];
         document.documentElement.style.setProperty(key, value)
     });
-
-    localStorage.setItem('mode', nextMode)
 }

@@ -395,13 +395,13 @@ a {
   }
 
   .dark-mode-toggle {
-    width: 40px;
-    height: 20px;
+    width: 50px;
+    height: 25px;
   }
 
   .dark-mode-toggle:before {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
   }
 
   .main-text {

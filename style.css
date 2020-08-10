@@ -130,13 +130,13 @@ a {
 }
 
 .avatar-container {
-  height: 180px;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .avatar {
-  height: 100%;
+  height: 180px;
+  width: 180px;
   border-radius: 50%;
 }
 

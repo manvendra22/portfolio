@@ -77,11 +77,11 @@ ScrollReveal(
 ScrollReveal().reveal('.nav, .dark-mode-toggle');
 
 ScrollReveal(
-    { delay: 2000, distance: '0px', scale: 0.5 }
+    { delay: 1500, distance: '0px', scale: 0 }
 ).reveal('.pulseBtn');
 
-ScrollReveal({ delay: 500, origin: 'bottom', distance: '50px', scale: 1, viewFactor: 1 }).reveal('.about-first');
-ScrollReveal({ delay: 1000 }).reveal('.about-second');
+ScrollReveal({ delay: 200, origin: 'bottom', distance: '50px', scale: 1, viewFactor: 1 }).reveal('.about-first');
+ScrollReveal({ delay: 700 }).reveal('.about-second');
 ScrollReveal({ delay: 0, origin: 'left' }).reveal('.project-intro');
 ScrollReveal({ delay: 500, origin: 'right' }).reveal('.project-image');
 

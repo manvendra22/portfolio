@@ -71,19 +71,19 @@ ScrollReveal(
 ).reveal('.intro');
 
 ScrollReveal(
-    { delay: 1000, origin: 'top', distance: '30px', duration: 1500 }
+    { delay: 1000, origin: 'top', distance: '50px', duration: 1500 }
 ).reveal('.links');
 
 ScrollReveal().reveal('.nav, .dark-mode-toggle');
 
 ScrollReveal(
-    { delay: 2000, origin: 'right', distance: '1000px' }
+    { delay: 2000, distance: '0px', scale: 0.5 }
 ).reveal('.pulseBtn');
 
-ScrollReveal({ delay: 500, origin: 'bottom', distance: '30px', viewFactor: 1 }).reveal('.about-first');
+ScrollReveal({ delay: 500, origin: 'bottom', distance: '50px', scale: 1, viewFactor: 1 }).reveal('.about-first');
 ScrollReveal({ delay: 1000 }).reveal('.about-second');
-ScrollReveal({ delay: 500, origin: 'left' }).reveal('.project-intro');
-ScrollReveal({ delay: 1000, origin: 'right' }).reveal('.project-image');
+ScrollReveal({ delay: 0, origin: 'left' }).reveal('.project-intro');
+ScrollReveal({ delay: 500, origin: 'right' }).reveal('.project-image');
 
 
 /*

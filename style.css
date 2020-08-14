@@ -138,6 +138,7 @@ a {
   height: 180px;
   width: 180px;
   border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .main-text {

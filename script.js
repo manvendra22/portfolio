@@ -72,7 +72,7 @@ ScrollReveal(
 
 ScrollReveal(
     { delay: 1000, origin: 'top', distance: '50px', duration: 1500 }
-).reveal('.links');
+).reveal('.intro .links');
 
 ScrollReveal().reveal('.nav, .dark-mode-toggle');
 

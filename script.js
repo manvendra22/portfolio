@@ -99,13 +99,14 @@ cl.responsive()
 */
 
 const LIGHT = {
-    '--color-bg': '#fff',
+    '--color-bg': 'linear-gradient(rgb(255, 255, 255) 0%,rgb(255, 255, 255) 88%,rgb(244, 247, 250) 100%)',
     '--color-text-primary': '#1f4160',
     '--color-primary': '#57af7a',
     '--color-primary-light': '#89c7a2',
     '--color-highlight': '#1f4160',
     '--color-highlight-bg': '#fbe7b2',
     '--color-border': '#ddd',
+    '--color-footer': 'rgb(244, 247, 250)',
     '--color-btn': '#5851ec',
     '--color-btn-bg': '#e5edff',
     '--color-btn-shadow': 'rgba(230, 237, 255, 0.7)',
@@ -118,13 +119,14 @@ const LIGHT = {
 }
 
 const DARK = {
-    '--color-bg': '#151515',
+    '--color-bg': 'linear-gradient(rgb(21, 21, 21) 0%,rgb(21, 21, 21) 88%,rgb(10, 13, 16) 100%)',
     '--color-text-primary': '#bdbdc3',
     '--color-primary': '#57af7a',
     '--color-primary-light': '#89c7a2',
     '--color-highlight': '#1f4160',
     '--color-highlight-bg': '#fbe7b2',
     '--color-border': '#ddd',
+    '--color-footer': 'rgb(10, 13, 16)',
     '--color-btn': '#5851ec',
     '--color-btn-bg': '#1e1e30',
     '--color-btn-shadow': 'rgba(30, 30, 48, 0.7)',

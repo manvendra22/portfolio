@@ -223,6 +223,7 @@ a {
 
 .skill .icon {
   height: 3rem;
+  width: 3rem;
   margin: unset;
 }
 
@@ -254,6 +255,11 @@ a {
 .project-intro {
   width: 50%;
   margin-right: 0.75rem;
+}
+
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .description {

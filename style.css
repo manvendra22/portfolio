@@ -13,6 +13,7 @@
     rgb(244, 247, 250) 100%
   );
   --color-text-primary: #1f4160;
+  --color-nav: rgb(255, 255, 255);
   --color-primary: #57af7a;
   --color-primary-light: #89c7a2;
   --color-highlight: #1f4160;
@@ -99,6 +100,7 @@ a {
   position: fixed;
   display: flex;
   flex-direction: column;
+  background: var(--color-nav);
   color: var(--color-primary-light);
   top: 2rem;
   left: 2.5rem;

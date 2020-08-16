@@ -100,6 +100,7 @@ cl.responsive()
 
 const LIGHT = {
     '--color-bg': 'linear-gradient(rgb(255, 255, 255) 0%,rgb(255, 255, 255) 88%,rgb(244, 247, 250) 100%)',
+    '--color-nav': 'rgb(255, 255, 255)',
     '--color-text-primary': '#1f4160',
     '--color-primary': '#57af7a',
     '--color-primary-light': '#89c7a2',
@@ -120,6 +121,7 @@ const LIGHT = {
 
 const DARK = {
     '--color-bg': 'linear-gradient(rgb(21, 21, 21) 0%,rgb(21, 21, 21) 88%,rgb(10, 13, 16) 100%)',
+    '--color-nav': 'rgb(21, 21, 21)',
     '--color-text-primary': '#bdbdc3',
     '--color-primary': '#57af7a',
     '--color-primary-light': '#89c7a2',

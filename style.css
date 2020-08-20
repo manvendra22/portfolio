@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  font-family: "Buenard", serif;
+  font-family: "DM Sans", sans-serif;
   line-height: 1.5rem;
   color: var(--color-text-primary);
   background: var(--color-bg);

@@ -400,6 +400,7 @@ a {
 
   .project-image {
     width: 100%;
+    padding: unset;
   }
 
   .buttons {

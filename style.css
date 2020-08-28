@@ -209,6 +209,7 @@ a {
 .skills {
   display: flex;
   flex-wrap: wrap;
+  font-size: 0.8rem;
 }
 
 .skill {

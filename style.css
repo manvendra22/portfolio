@@ -372,7 +372,6 @@ a {
   position: absolute;
   bottom: 30px;
   transform: translateX(-50%);
-  padding: unset;
   background-color: unset;
   box-shadow: 0 0 0 0 var(--color-btn-shadow);
   animation: pulse 3s infinite cubic-bezier(0.66, 0, 0, 1);

@@ -67,14 +67,14 @@ function checkIntersectionValues() {
 */
 
 ScrollReveal(
-    { delay: 200, duration: 2000, mobile: false }
+    { delay: 200, duration: 2000 }
 ).reveal('.intro, .nav, .dark-mode-toggle');
 
 ScrollReveal(
-    { delay: 1500, scale: 0 }
+    { delay: 2000, scale: 0 }
 ).reveal('.pulseBtn');
 
-ScrollReveal({ delay: 200, origin: 'bottom', distance: '50px', scale: 1, viewFactor: 1 }).reveal('.about-first');
+ScrollReveal({ delay: 200, origin: 'bottom', distance: '50px', scale: 1, viewFactor: 1, mobile: false }).reveal('.about-first');
 ScrollReveal({ delay: 700 }).reveal('.about-second');
 ScrollReveal({ delay: 0, origin: 'left' }).reveal('.project-intro');
 ScrollReveal({ delay: 500, origin: 'right' }).reveal('.project-image');

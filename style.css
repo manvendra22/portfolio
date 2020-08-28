@@ -12,7 +12,8 @@
     rgb(255, 255, 255) 88%,
     rgb(244, 247, 250) 100%
   );
-  --color-text-primary: #1f4160;
+  --color-text-primary: #233040;
+  --color-text-secondary: #334259;
   --color-nav: rgb(255, 255, 255);
   --color-primary: #57af7a;
   --color-primary-light: #89c7a2;
@@ -39,7 +40,7 @@ html {
 body {
   font-family: "Noto Serif", serif;
   line-height: 2rem;
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
   background: var(--color-bg);
 }
 
@@ -152,6 +153,7 @@ a {
   font-family: "Public Sans", sans-serif;
   font-weight: 700;
   font-size: 3.5rem;
+  color: var(--color-text-primary);
   margin-bottom: 1rem;
 }
 

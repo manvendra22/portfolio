@@ -256,8 +256,8 @@ a {
 }
 
 .project-intro {
-  width: 50%;
-  margin-right: 0.75rem;
+  width: 40%;
+  padding: 2rem;
 }
 
 .icon {
@@ -270,7 +270,9 @@ a {
 }
 
 .project-image {
-  width: 50%;
+  width: 60%;
+  padding: 2rem;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
 }
 
 .content-image {

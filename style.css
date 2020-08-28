@@ -459,6 +459,23 @@ a {
     width: 25px;
   }
 
+  .main-text {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+  }
+
+  .nav {
+    font-size: 1rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
   .footer {
     padding: 0.5rem 1rem;
   }

@@ -70,9 +70,9 @@ ScrollReveal(
     { delay: 200, duration: 2000, mobile: false }
 ).reveal('.intro');
 
-ScrollReveal(
-    { delay: 1000, origin: 'top', distance: '50px', duration: 1500 }
-).reveal('.intro .links');
+// ScrollReveal(
+//     { delay: 1000, origin: 'top', distance: '50px', duration: 1500 }
+// ).reveal('.intro .links');
 
 ScrollReveal().reveal('.nav, .dark-mode-toggle');
 

@@ -68,16 +68,10 @@ function checkIntersectionValues() {
 
 ScrollReveal(
     { delay: 200, duration: 2000, mobile: false }
-).reveal('.intro');
-
-// ScrollReveal(
-//     { delay: 1000, origin: 'top', distance: '50px', duration: 1500 }
-// ).reveal('.intro .links');
-
-ScrollReveal().reveal('.nav, .dark-mode-toggle');
+).reveal('.intro, .nav, .dark-mode-toggle');
 
 ScrollReveal(
-    { delay: 1500, distance: '0px', scale: 0 }
+    { delay: 1500, scale: 0 }
 ).reveal('.pulseBtn');
 
 ScrollReveal({ delay: 200, origin: 'bottom', distance: '50px', scale: 1, viewFactor: 1 }).reveal('.about-first');

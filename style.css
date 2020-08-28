@@ -1,9 +1,40 @@
+/* CSS Reset */
+
+/* Box sizing rules */
 *,
 *::after,
 *::before {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Set core defaults */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 2rem;
+  text-rendering: optimizeSpeed;
+  font-family: "Noto Serif", serif;
+  color: var(--color-text-secondary);
+  background: var(--color-bg);
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
 }
 
 :root {
@@ -30,18 +61,6 @@
   --color-icon-linkedin: #0077b5;
   --color-icon-medium: #212121;
   --color-icon-twitter: #03a9f4;
-}
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Noto Serif", serif;
-  line-height: 2rem;
-  color: var(--color-text-secondary);
-  background: var(--color-bg);
 }
 
 a {
@@ -139,13 +158,13 @@ a {
 }
 
 .avatar-container {
-  text-align: center;
   margin-bottom: 2rem;
 }
 
 .avatar {
   height: 160px;
   width: 160px;
+  margin: 0 auto;
   border-radius: 50%;
   box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15);
 }
@@ -287,8 +306,12 @@ a {
 }
 
 .project-intro {
-  width: 40%;
+  width: 45%;
   padding: 0 2rem;
+}
+
+.tech {
+  display: flex;
 }
 
 .icon {
@@ -301,13 +324,11 @@ a {
 }
 
 .project-image {
-  width: 60%;
-  padding: 0 2rem;
+  width: 55%;
   transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
 }
 
 .content-image {
-  width: 100%;
   border: 1px solid var(--color-border);
   border-radius: 0.5rem;
 }

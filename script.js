@@ -1,4 +1,30 @@
 /*
+    Scroll reveal animations
+*/
+
+ScrollReveal(
+    { delay: 200, duration: 2000 }
+).reveal('.intro, .nav, .dark-mode-toggle');
+
+ScrollReveal(
+    { delay: 1000, scale: 0 }
+).reveal('.pulseBtn');
+
+ScrollReveal({ delay: 200, origin: 'bottom', distance: '50px', scale: 1, viewFactor: 1, mobile: false }).reveal('.about-first');
+ScrollReveal({ delay: 700 }).reveal('.about-second');
+ScrollReveal({ delay: 0, origin: 'left' }).reveal('.project-intro');
+ScrollReveal({ delay: 500, origin: 'right' }).reveal('.project-image');
+
+
+/*
+    Cloudinary responsive images
+*/
+
+const cl = new cloudinary.Cloudinary({ cloud_name: 'dracarys' })
+cl.responsive()
+
+
+/*
     Navigation active handlers
 */
 
@@ -60,32 +86,6 @@ function checkIntersectionValues() {
 
     targetElements?.[maxIndex]?.classList.add('visible');
 }
-
-
-/*
-    Scroll reveal animations
-*/
-
-ScrollReveal(
-    { delay: 200, duration: 2000 }
-).reveal('.intro, .nav, .dark-mode-toggle');
-
-ScrollReveal(
-    { delay: 2000, scale: 0 }
-).reveal('.pulseBtn');
-
-ScrollReveal({ delay: 200, origin: 'bottom', distance: '50px', scale: 1, viewFactor: 1, mobile: false }).reveal('.about-first');
-ScrollReveal({ delay: 700 }).reveal('.about-second');
-ScrollReveal({ delay: 0, origin: 'left' }).reveal('.project-intro');
-ScrollReveal({ delay: 500, origin: 'right' }).reveal('.project-image');
-
-
-/*
-    Cloudinary responsive images
-*/
-
-const cl = new cloudinary.Cloudinary({ cloud_name: 'dracarys' })
-cl.responsive()
 
 
 /*

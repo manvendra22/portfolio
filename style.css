@@ -45,9 +45,8 @@ img {
   );
   --color-text-primary: #233040;
   --color-text-secondary: #334259;
-  --color-nav: rgb(255, 255, 255);
+  --color-nav-bg: rgb(255, 255, 255);
   --color-primary: #57af7a;
-  --color-primary-light: #89c7a2;
   --color-secondary: #5851ec;
   --color-highlight: #ffeaa7;
   --color-highlight-text: #334259;
@@ -121,8 +120,8 @@ a {
   position: fixed;
   display: flex;
   flex-direction: column;
-  background: var(--color-nav);
-  color: var(--color-primary-light);
+  background: var(--color-nav-bg);
+  color: var(--color-text-secondary);
   top: 2rem;
   left: 2.5rem;
   z-index: 2;
@@ -135,11 +134,11 @@ a {
 }
 
 .nav a:hover {
-  color: var(--color-primary);
+  color: var(--color-text-primary);
 }
 
 .nav .visible {
-  color: var(--color-primary);
+  color: var(--color-text-primary);
   transform: scale(1.2);
 }
 
@@ -186,7 +185,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-primary);
   margin-bottom: 2rem;
 }
 

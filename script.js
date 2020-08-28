@@ -94,11 +94,10 @@ function checkIntersectionValues() {
 
 const LIGHT = {
     '--color-bg': 'linear-gradient(rgb(255, 255, 255) 0%,rgb(255, 255, 255) 88%,rgb(244, 247, 250) 100%)',
-    '--color-nav': 'rgb(255, 255, 255)',
+    '--color-nav-bg': 'rgb(255, 255, 255)',
     '--color-text-primary': '#233040',
     '--color-text-secondary': '#334259',
     '--color-primary': '#57af7a',
-    '--color-primary-light': '#89c7a2',
     '--color-secondary': '#5851ec',
     '--color-highlight': '#ffeaa7;',
     '--color-highlight-text': '#334259',
@@ -116,11 +115,10 @@ const LIGHT = {
 
 const DARK = {
     '--color-bg': 'linear-gradient(rgb(21, 21, 21) 0%,rgb(21, 21, 21) 88%,rgb(10, 13, 16) 100%)',
-    '--color-nav': 'rgb(21, 21, 21)',
+    '--color-nav-bg': 'rgb(21, 21, 21)',
     '--color-text-primary': '#fff',
     '--color-text-secondary': '#bdbdc3',
     '--color-primary': '#57af7a',
-    '--color-primary-light': '#89c7a2',
     '--color-secondary': '#5851ec',
     '--color-highlight': '#ffeaa7',
     '--color-highlight-text': '#334259',

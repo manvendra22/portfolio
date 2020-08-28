@@ -292,7 +292,8 @@ a {
 .btn {
   display: inline-block;
   cursor: pointer;
-  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
   color: var(--color-btn);
   background-color: var(--color-btn-bg);
   border-radius: 0.3rem;
@@ -331,13 +332,15 @@ a {
 }
 
 .pulseBtn {
+  padding: unset;
+  background-color: unset;
   box-shadow: 0 0 0 0 var(--color-btn-shadow);
-  animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulse 3s infinite cubic-bezier(0.66, 0, 0, 1);
 }
 
 @keyframes pulse {
   to {
-    box-shadow: 0 0 0 30px var(--color-btn-shadow-anime);
+    box-shadow: 0 0 0 20px var(--color-btn-shadow-anime);
   }
 }
 

@@ -41,9 +41,9 @@ const intersectionObserverOptions = {
 }
 
 // initialize the observer with handlers
-var homeObserver = new IntersectionObserver(onHomeIntersection, intersectionObserverOptions);
-var aboutObserver = new IntersectionObserver(onAboutIntersection, intersectionObserverOptions);
-var projectsObserver = new IntersectionObserver(onProjectsIntersection, intersectionObserverOptions);
+let homeObserver = new IntersectionObserver(onHomeIntersection, intersectionObserverOptions);
+let aboutObserver = new IntersectionObserver(onAboutIntersection, intersectionObserverOptions);
+let projectsObserver = new IntersectionObserver(onProjectsIntersection, intersectionObserverOptions);
 
 // provide the observer with a target
 homeObserver.observe(homeTarget);

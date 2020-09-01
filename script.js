@@ -16,6 +16,8 @@ ScrollReveal({ delay: 0, origin: 'left' }).reveal('.project-intro');
 ScrollReveal({ delay: 500, origin: 'right' }).reveal('.project-image');
 
 
+
+
 /*
     Cloudinary responsive images
 */
@@ -24,68 +26,43 @@ const cl = new cloudinary.Cloudinary({ cloud_name: 'dracarys' })
 cl.responsive()
 
 
+
+
 /*
     Navigation active handlers
 */
 
-const homeTarget = document.querySelector('#home');
-const aboutTarget = document.querySelector('#about');
-const projectsTarget = document.querySelector('#projects');
-const targetElements = document.querySelectorAll('.nav_link')
+const targetSections = document.querySelectorAll('section');
+const targetNavlinks = document.querySelectorAll('.nav_link')
 
 // configure the intersection observer instance
-const intersectionObserverOptions = {
-    root: null,
+const observerOptions = {
+    // root: null,
     // rootMargin: '100px',
-    threshold: 0.1
+    threshold: 0.10
 }
 
-// initialize the observer with handlers
-let homeObserver = new IntersectionObserver(onHomeIntersection, intersectionObserverOptions);
-let aboutObserver = new IntersectionObserver(onAboutIntersection, intersectionObserverOptions);
-let projectsObserver = new IntersectionObserver(onProjectsIntersection, intersectionObserverOptions);
+let observer = new IntersectionObserver(onIntersection, observerOptions);
 
-// provide the observer with a target
-homeObserver.observe(homeTarget);
-aboutObserver.observe(aboutTarget);
-projectsObserver.observe(projectsTarget);
-
-const intersectionValues = []
-
-function onHomeIntersection(entries) {
+function onIntersection(entries) {
     entries.forEach(entry => {
-        intersectionValues[0] = entry.intersectionRatio
-        checkIntersectionValues()
-        // targetElements[0].classList.toggle('visible', entry.intersectionRatio > 0);
-    });
+        if (entry.isIntersecting) {
+            targetNavlinks.forEach(navlink => {
+                if (navlink.attributes['data-name'].value === entry.target.id) {
+                    navlink.classList.add('visible');
+                } else {
+                    navlink.classList.remove('visible');
+                }
+            })
+        }
+    })
 }
 
-function onAboutIntersection(entries) {
-    entries.forEach(entry => {
-        intersectionValues[1] = entry.intersectionRatio
-        checkIntersectionValues()
-        // targetElements[1].classList.toggle('visible', entry.intersectionRatio > 0);
-    });
-}
+targetSections.forEach(section => {
+    observer.observe(section)
+})
 
-function onProjectsIntersection(entries) {
-    entries.forEach(entry => {
-        intersectionValues[2] = entry.intersectionRatio
-        checkIntersectionValues()
-        // targetElements[2].classList.toggle('visible', entry.intersectionRatio > 0);
-    });
-}
 
-function checkIntersectionValues() {
-    const max = Math.max(...intersectionValues)
-    const maxIndex = intersectionValues.findIndex(value => value === max)
-
-    targetElements?.[0]?.classList.remove('visible');
-    targetElements?.[1]?.classList.remove('visible');
-    targetElements?.[2]?.classList.remove('visible');
-
-    targetElements?.[maxIndex]?.classList.add('visible');
-}
 
 
 /*

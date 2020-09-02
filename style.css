@@ -13,6 +13,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p {
   margin: 0;
 }
@@ -308,11 +310,21 @@ a {
 }
 
 #blog {
-  margin-bottom: 12rem;
+  margin-bottom: 24rem;
   padding-top: 2.5rem;
 }
 
-.post {
+.blog {
+  margin-bottom: 2rem;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.blog-detail {
+  font-family: "Public Sans", sans-serif;
 }
 
 .tech {

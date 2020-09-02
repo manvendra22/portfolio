@@ -39,7 +39,7 @@ const targetNavlinks = document.querySelectorAll('.nav_link')
 const observerOptions = {
     // root: null,
     // rootMargin: '100px',
-    threshold: 0.10
+    threshold: 0.25
 }
 
 let observer = new IntersectionObserver(onIntersection, observerOptions);

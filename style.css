@@ -250,7 +250,7 @@ a {
 
 .main-title-container {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .main-title {
@@ -266,7 +266,7 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 0rem;
+  height: 0.2rem;
   background-color: #ffeaa7;
   border-radius: 48% 16% 64%;
   transform: rotate(-4deg);
@@ -276,8 +276,9 @@ a {
 .sub-title {
   font-family: "Public Sans", sans-serif;
   display: inline-block;
-  color: var(--color-text-primary);
-  font-size: 1.2rem;
+  color: #545977;
+  background-color: #ffeaa7;
+  padding: 0 0.5rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
@@ -335,7 +336,6 @@ a {
 
 .tech {
   display: flex;
-  margin-top: -1rem;
 }
 
 .icon {

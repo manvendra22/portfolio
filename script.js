@@ -11,7 +11,7 @@ ScrollReveal(
 ).reveal('.pulseBtn');
 
 ScrollReveal({ delay: 200, origin: 'bottom', distance: '50px', scale: 1, viewFactor: 1, mobile: false }).reveal('.about-first');
-ScrollReveal({ delay: 700 }).reveal('.about-second');
+ScrollReveal({ delay: 700 }).reveal('.about-second, .blog');
 ScrollReveal({ delay: 0, origin: 'left' }).reveal('.project-intro');
 ScrollReveal({ delay: 500, origin: 'right' }).reveal('.project-image');
 

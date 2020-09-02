@@ -255,7 +255,7 @@ a {
 
 .main-title {
   font-family: "Public Sans", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: inline-block;
   color: var(--color-secondary);
   position: relative;
@@ -273,12 +273,11 @@ a {
   z-index: -1;
 }
 
-.highlight-title {
+.sub-title {
   font-family: "Public Sans", sans-serif;
   display: inline-block;
-  background: #ffeaa7;
-  color: #777c9b;
-  padding: 0 0.5rem;
+  color: var(--color-text-primary);
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
@@ -314,7 +313,7 @@ a {
 
 .blog-title {
   color: var(--color-text-dark);
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   transition: color 0.2s;
 }
 
@@ -336,6 +335,7 @@ a {
 
 .tech {
   display: flex;
+  margin-top: -1rem;
 }
 
 .icon {
@@ -517,10 +517,6 @@ a {
 
   .nav {
     font-size: 1rem;
-  }
-
-  .main-title {
-    font-size: 2rem;
   }
 
   .footer {

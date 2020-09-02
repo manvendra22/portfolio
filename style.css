@@ -199,6 +199,7 @@ a {
   width: 1.2rem;
   height: 1.2rem;
   fill: var(--color-primary);
+  transition: fill 0.25s;
 }
 
 .resume-icon:hover {
@@ -318,7 +319,7 @@ a {
   color: var(--color-text-dark);
   font-weight: 600;
   font-size: 1.5rem;
-  transition: color 0.2s;
+  transition: color 0.25s;
 }
 
 .blog-title:hover {

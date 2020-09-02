@@ -17,6 +17,7 @@ h5,
 h6,
 p {
   margin: 0;
+  font-weight: 400;
 }
 
 /* Set core defaults */
@@ -256,6 +257,7 @@ a {
 .main-title {
   font-family: "Public Sans", sans-serif;
   font-size: 2rem;
+  font-weight: 700;
   display: inline-block;
   color: var(--color-secondary);
   position: relative;
@@ -275,8 +277,9 @@ a {
 
 .sub-title {
   font-family: "Public Sans", sans-serif;
+  font-weight: 500;
   display: inline-block;
-  color: #545977;
+  color: #665e43;
   background-color: #ffeaa7;
   padding: 0 0.5rem;
   margin-bottom: 1rem;
@@ -314,6 +317,7 @@ a {
 
 .blog-title {
   color: var(--color-text-dark);
+  font-weight: 600;
   font-size: 1.5rem;
   transition: color 0.2s;
 }
@@ -324,7 +328,7 @@ a {
 
 .pin {
   background: #bee3f8;
-  color: #2c5282;
+  color: #5f727c;
   padding: 0 5px;
   border-radius: 5px;
   font-size: 0.8rem;

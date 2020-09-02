@@ -45,13 +45,14 @@ img {
     rgb(255, 255, 255) 88%,
     rgb(244, 247, 250) 100%
   );
+  --color-text-dark: #121f35;
   --color-text-primary: #233040;
-  --color-text-secondary: #334259;
+  --color-text-secondary: #545977;
   --color-nav-bg: rgb(255, 255, 255);
   --color-primary: #57af7a;
   --color-secondary: #5851ec;
   --color-highlight: #ffeaa7;
-  --color-highlight-text: #334259;
+  --color-highlight-text: #777c9b;
   --color-border: #ddd;
   --color-footer: rgb(244, 247, 250);
   --color-btn-bg: #e5edff;
@@ -123,7 +124,6 @@ a {
   display: flex;
   flex-direction: column;
   background: var(--color-nav-bg);
-  color: var(--color-text-secondary);
   top: 2rem;
   left: 2.5rem;
   z-index: 2;
@@ -159,7 +159,7 @@ a {
 }
 
 .avatar-container {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .avatar {
@@ -175,12 +175,12 @@ a {
   font-weight: 700;
   font-size: 3.5rem;
   color: var(--color-text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .sub-text {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .links {
@@ -319,7 +319,8 @@ a {
 }
 
 .blog-title {
-  font-size: 2rem;
+  color: var(--color-text-dark);
+  font-size: 1.5rem;
   font-weight: 500;
 }
 

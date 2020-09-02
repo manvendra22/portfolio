@@ -187,7 +187,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 .link {
@@ -259,7 +258,7 @@ a {
 
 .main-title {
   font-family: "Public Sans", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   display: inline-block;
   color: var(--color-secondary);
   position: relative;
@@ -318,13 +317,12 @@ a {
 
 .blog-title {
   color: var(--color-text-dark);
-  font-size: 1.5rem;
-  border-bottom: 2px solid var(--color-bg);
-  transition: all 0.5s;
+  font-size: 1.6rem;
+  transition: color 0.2s;
 }
 
 .blog-title:hover {
-  border-bottom: 2px solid var(--color-text-dark);
+  color: var(--color-primary);
 }
 
 .blog-detail {

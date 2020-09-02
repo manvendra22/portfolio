@@ -277,7 +277,7 @@ a {
   z-index: -1;
 }
 
-.title {
+.highlight-title {
   font-family: "Public Sans", sans-serif;
   display: inline-block;
   background: var(--color-highlight);

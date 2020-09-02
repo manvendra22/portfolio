@@ -288,7 +288,6 @@ a {
 }
 
 #projects {
-  margin-bottom: 12rem;
   padding-top: 2.5rem;
 }
 
@@ -305,7 +304,15 @@ a {
 
 .project-intro {
   width: 45%;
-  padding: 0 2rem;
+  padding-right: 2rem;
+}
+
+#blog {
+  margin-bottom: 12rem;
+  padding-top: 2.5rem;
+}
+
+.post {
 }
 
 .tech {

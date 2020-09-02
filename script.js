@@ -16,16 +16,12 @@ ScrollReveal({ delay: 0, origin: 'left' }).reveal('.project-intro');
 ScrollReveal({ delay: 500, origin: 'right' }).reveal('.project-image');
 
 
-
-
 /*
     Cloudinary responsive images
 */
 
 const cl = new cloudinary.Cloudinary({ cloud_name: 'dracarys' })
 cl.responsive()
-
-
 
 
 /*
@@ -61,8 +57,6 @@ function onIntersection(entries) {
 targetSections.forEach(section => {
     observer.observe(section)
 })
-
-
 
 
 /*

@@ -132,7 +132,7 @@ a {
 
 .nav a {
   margin-bottom: 1.5rem;
-  transition: all 0.3s ease 0s;
+  transition: all 0.3s;
 }
 
 .nav a:hover {
@@ -319,7 +319,12 @@ a {
 .blog-title {
   color: var(--color-text-dark);
   font-size: 1.5rem;
-  font-weight: 500;
+  border-bottom: 2px solid var(--color-bg);
+  transition: all 0.5s;
+}
+
+.blog-title:hover {
+  border-bottom: 2px solid var(--color-text-dark);
 }
 
 .blog-detail {

@@ -27,7 +27,6 @@ html {
 
 body {
   line-height: 2rem;
-  text-rendering: optimizeSpeed;
   font-family: "Noto Serif", serif;
   color: var(--color-text-secondary);
   background: var(--color-bg);
@@ -228,7 +227,7 @@ a {
 }
 
 .aboutme {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .skills {

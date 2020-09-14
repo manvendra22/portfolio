@@ -297,6 +297,7 @@ a {
 }
 
 .project {
+  width: 100%;
   display: flex;
   margin-bottom: 3rem;
 }
@@ -342,9 +343,10 @@ a {
   display: flex;
 }
 
-.icon {
+.tech .icon {
   height: 1.5rem;
   width: 1.5rem;
+  margin-right: 0.5rem;
 }
 
 .description {

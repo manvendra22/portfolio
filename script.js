@@ -60,6 +60,13 @@ targetSections.forEach(section => {
 
 
 /*
+    Set current year
+*/
+
+document.getElementById("currentYear").innerText = new Date().getFullYear()
+
+
+/*
     Dark mode theme
 */
 
